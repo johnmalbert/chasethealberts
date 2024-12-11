@@ -28,30 +28,19 @@ const originalPhotos = [
 ];
 
 const Home = () => {
-  // Shuffle function to randomize the photo order
-  const shuffleArray = (array) => {
-    let shuffled = array.slice(); // Create a copy of the array
-    for (let i = shuffled.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
-    }
-    return shuffled;
-  };
-
-  // State to store the shuffled photos
+  // State to store the photos
   const [featuredPhotos, setFeaturedPhotos] = useState([]);
 
-  // Shuffle the photos every time the component mounts
+  // Set the photos when the component mounts
   useEffect(() => {
-    const shuffledPhotos = shuffleArray(originalPhotos);
-    console.log(shuffledPhotos); // Debug: Check if images are shuffled properly
-    setFeaturedPhotos(shuffledPhotos);
+    setFeaturedPhotos(originalPhotos);
   }, []);
 
   const featuredVideoUrl = "https://www.youtube.com/embed/3Vvt5zx1STE?si=WC0URVTEDOVhaJ00";
 
   // Trigger scroll animations
   useScrollAnimation();
+  
   return (
     <div className="home-container">
       {/* Featured Photos Section */}

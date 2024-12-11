@@ -5,7 +5,7 @@ const useScrollAnimation = () => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
+          entry.target.classList.add('visible'); // Ensure this adds the 'visible' class
         }
       });
     });
@@ -13,6 +13,7 @@ const useScrollAnimation = () => {
     const elements = document.querySelectorAll('.animate-on-scroll');
     elements.forEach((el) => observer.observe(el));
 
+    // Cleanup observer on component unmount
     return () => {
       elements.forEach((el) => observer.unobserve(el));
     };

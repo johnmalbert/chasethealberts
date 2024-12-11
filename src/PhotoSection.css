@@ -6,16 +6,20 @@
 
 .photo {
     width: 100%;
-    margin-bottom: 10px;
-    opacity: 0;
+    margin-bottom: 5px;
+    opacity: 1; /* Start with opacity 0 */
     transition: transform 1s, opacity 1s;
     border: 3px solid #f0f0f0; /* Light gray border */
     box-sizing: border-box;
-    break-inside: avoid; /* Prevent images from breaking inside the columns */
+    break-inside: avoid;
+}
+
+.photo.loaded {
+    opacity: 1; /* Become visible when image is fully loaded */
 }
 
 .animate-on-scroll {
-    transform: translateY(50px);
+    transform: translateY(50px); /* Default starting animation */
 }
 
 .animate-on-scroll.visible {
