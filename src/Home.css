@@ -88,6 +88,10 @@ body {
     margin-bottom: 20px; /* Space between the logo and text for mobile */
 }
 
+.about-us-right-image {
+    margin-left: 20px; /* Space between the text and right image */
+}
+
 .about-us p {
     margin: 0;
     color: var(--secondary-color);
@@ -104,5 +108,9 @@ body {
     .about-us-logo {
         margin-bottom: 0;
         margin-right: 20px;
+    }
+
+    .about-us-right-image {
+        margin-left: 20px;
     }
 }

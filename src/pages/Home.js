@@ -58,22 +58,27 @@ const Home = () => {
         <VideoSection videoUrl={featuredVideoUrl} />
       </section>
 
-      {/* About Us Section */}
-      <section className="about-us">
-        <h2>About Us</h2>
-        <div className="about-us-content">
-          <img 
-            src="/images/logo.jpg" 
-            alt="Our Logo" 
-            className="about-us-logo" 
-          />
-          <p>
-            We're the Alberts, a couple passionate about travel, backpacking, and mountaineering.
-            We have found that sometimes the only way to recharge is to step away and unplug in the mountains, 
-            and these images attempt to capture that feeling.
-          </p>
-        </div>
-      </section>
+    {/* About Us Section */}
+    <section className="about-us">
+      <h2>About Us</h2>
+      <div className="about-us-content">
+        <img 
+          src="/images/logo.jpg" 
+          alt="Our Logo" 
+          className="about-us-logo" 
+        />
+        <p>
+          We're the Alberts, a couple passionate about travel, backpacking, and mountaineering.
+          We have found that sometimes the only way to recharge is to step away and unplug in the mountains, 
+          and these images attempt to capture that feeling.
+        </p>
+        <img 
+          src="/images/profile.jpg" // Add your image source here
+          alt="Profile" 
+          className="about-us-logo about-us-right-image" 
+        />
+      </div>
+    </section>
     </div>
   );
 };
