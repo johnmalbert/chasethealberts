@@ -1,4 +1,3 @@
-/* src/pages/Home.css */
 :root {
     --primary-color: #c4c4c4;
     --secondary-color: #00332a;
@@ -8,7 +7,7 @@
 
 body {
     margin: 0;
-    padding: 0; 
+    padding: 0;
     font-family: 'Roboto', sans-serif;
     background-color: var(--primary-color);
     color: var(--text-color);
@@ -34,6 +33,7 @@ body {
 .hero-subtitle {
     font-size: 1.5rem;
     color: var(--text-color);
+    margin: 10px 0 0 0;
 }
 
 /* Featured Photos */
@@ -44,7 +44,8 @@ body {
 
 .featured-photos h2 {
     font-size: 2rem;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
+    color: var(--secondary-color);
 }
 
 /* Featured Video */
@@ -56,23 +57,49 @@ body {
 .featured-video h2 {
     font-size: 2rem;
     margin-bottom: 20px;
+    color: var(--secondary-color);
 }
 
 /* About Us Section */
 .about-us {
-    background-color: var(--secondary-color);
-    padding: 50px 20px;
-    margin: 50px 0;
-    text-align: center;
+    margin: 40px 0;
+    text-align: left;
 }
 
 .about-us h2 {
+    text-align: center;
     font-size: 2rem;
     margin-bottom: 20px;
+    color: var(--secondary-color);
+}
+
+.about-us-content {
+    display: flex;
+    flex-direction: column; /* Stacks elements vertically on mobile */
+    align-items: flex-start;
+}
+
+.about-us-logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px; /* Space between the logo and text for mobile */
 }
 
 .about-us p {
-    max-width: 800px;
-    margin: 0 auto;
-    font-size: 1.2rem;
+    margin: 0;
+    color: var(--secondary-color);
+    line-height: 1.6;
+}
+
+/* Adjust layout for larger screens */
+@media (min-width: 768px) {
+    .about-us-content {
+        flex-direction: row; /* Row layout for larger screens */
+        align-items: center;
+    }
+
+    .about-us-logo {
+        margin-bottom: 0;
+        margin-right: 20px;
+    }
 }
