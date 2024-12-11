@@ -1,0 +1,40 @@
+.photo-section {
+    column-count: 3; /* Default for desktop */
+    column-gap: 10px; /* Spacing between the columns */
+    padding: 10px;
+}
+
+.photo {
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0;
+    transition: transform 1s, opacity 1s;
+    border: 3px solid #f0f0f0; /* Light gray border */
+    box-sizing: border-box;
+    break-inside: avoid; /* Prevent images from breaking inside the columns */
+}
+
+.animate-on-scroll {
+    transform: translateY(50px);
+}
+
+.animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive layout for tablets */
+@media (max-width: 768px) {
+    .photo-section {
+        column-count: 2; /* Two columns for tablet */
+        column-gap: 8px;
+    }
+}
+
+/* Responsive layout for mobile devices */
+@media (max-width: 480px) {
+    .photo-section {
+        column-count: 1; /* One column for mobile */
+        column-gap: 5px;
+    }
+}

@@ -1,0 +1,78 @@
+/* src/pages/Home.css */
+:root {
+    --primary-color: #c4c4c4;
+    --secondary-color: #00332a;
+    --text-color: #9695956f;
+    --highlight-color: #ffa726;
+}
+
+body {
+    margin: 0;
+    padding: 0; 
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+.home-container {
+    padding: 20px;
+}
+
+/* Hero Section */
+.hero-section {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: var(--secondary-color);
+}
+
+.hero-title {
+    font-size: 3rem;
+    color: var(--highlight-color);
+    margin: 0;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    color: var(--text-color);
+}
+
+/* Featured Photos */
+.featured-photos {
+    margin: 50px 0;
+    text-align: center;
+}
+
+.featured-photos h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Featured Video */
+.featured-video {
+    margin: 50px 0;
+    text-align: center;
+}
+
+.featured-video h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* About Us Section */
+.about-us {
+    background-color: var(--secondary-color);
+    padding: 50px 20px;
+    margin: 50px 0;
+    text-align: center;
+}
+
+.about-us h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+}
