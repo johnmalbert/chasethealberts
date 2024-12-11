@@ -1,44 +1,54 @@
+/* Styling for the photo section */
 .photo-section {
-    column-count: 3; /* Default for desktop */
-    column-gap: 10px; /* Spacing between the columns */
-    padding: 10px;
+    column-count: 3; /* Adjust the number of columns */
+    column-gap: 10px;
+    padding: 5px;
+}
+
+/* Photo container to hold image and subtitle */
+.photo-container {
+    position: relative;
+    margin-bottom: 5px;
+    display: inline-block;
+    cursor: pointer;
 }
 
 .photo {
     width: 100%;
-    margin-bottom: 5px;
-    opacity: 1; /* Start with opacity 0 */
-    transition: transform 1s, opacity 1s;
-    border: 3px solid #f0f0f0; /* Light gray border */
+    transition: transform 0.3s ease, width 0.3s ease;
+    border: 3px solid #f0f0f0;
     box-sizing: border-box;
-    break-inside: avoid;
-}
-
-.photo.loaded {
-    opacity: 1; /* Become visible when image is fully loaded */
-}
-
-.animate-on-scroll {
-    transform: translateY(50px); /* Default starting animation */
-}
-
-.animate-on-scroll.visible {
     opacity: 1;
-    transform: translateY(0);
+    transition: transform 1s, opacity 1s;
 }
 
-/* Responsive layout for tablets */
-@media (max-width: 768px) {
-    .photo-section {
-        column-count: 2; /* Two columns for tablet */
-        column-gap: 8px;
-    }
+/* Animate image size when clicked */
+.photo-container.active .photo {
+    width: calc(100% + 10px); /* Increase width by 20px */
 }
 
-/* Responsive layout for mobile devices */
-@media (max-width: 480px) {
-    .photo-section {
-        column-count: 2; /* One column for mobile */
-        column-gap: 5px;
-    }
+/* Subtitle styles */
+.photo-subtitle {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    background-color: rgba(98, 98, 98, 0.6); /* Semi-transparent background */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 1rem;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease-in-out;
+    font-style: italic;
+}
+
+/* When the image is clicked, show the subtitle */
+.photo-container.active .photo-subtitle {
+    opacity: 1;
+}
+
+/* Animation for image opacity */
+.loaded {
+    opacity: 1;
 }

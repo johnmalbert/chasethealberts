@@ -44,7 +44,8 @@ body {
 
 .featured-photos h2 {
     font-size: 2rem;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    font-style: italic;
     color: var(--secondary-color);
 }
 
@@ -64,6 +65,8 @@ body {
 .about-us {
     margin: 40px 0;
     text-align: left;
+    margin-left: 25%;
+    margin-right: 25%;
 }
 
 .about-us h2 {
