@@ -38,7 +38,7 @@
 /* Responsive layout for mobile devices */
 @media (max-width: 480px) {
     .photo-section {
-        column-count: 1; /* One column for mobile */
+        column-count: 2; /* One column for mobile */
         column-gap: 5px;
     }
 }

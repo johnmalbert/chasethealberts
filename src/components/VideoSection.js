@@ -1,10 +1,9 @@
 import React from 'react';
+import '../VideoSection.css'; // Import the corresponding CSS for styling
 
 const VideoSection = ({ videoUrl }) => (
-  <div className="video-section">
+  <div className="video-wrapper">
     <iframe
-      width="100%"
-      height="500"
       src={videoUrl}
       frameBorder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

@@ -15,7 +15,7 @@ body {
 }
 
 .home-container {
-    padding: 20px;
+    padding: 10px;
 }
 
 /* Hero Section */
@@ -38,13 +38,13 @@ body {
 
 /* Featured Photos */
 .featured-photos {
-    margin: 50px 0;
+    margin: 20px 0;
     text-align: center;
 }
 
 .featured-photos h2 {
     font-size: 2rem;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
 /* Featured Video */
