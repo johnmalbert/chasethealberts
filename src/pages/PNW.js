@@ -5,15 +5,15 @@ import useScrollAnimation from '../hooks/useScrollAnimation';
 import '../Home.css'; // Reuse the same styles as the home page
 
 const pnwPhotos = [
-  { src: '/images/PNW/photo1.jpg', subtitle: 'John diving into Raven Lake' },
-  { src: '/images/PNW/photo2.jpg', subtitle: 'Fresh huckleberries' },
-  { src: '/images/PNW/photo3.jpg', subtitle: 'Raven lake to ourselves' },
-  { src: '/images/PNW/photo4.jpg', subtitle: 'Silent Lakes at sunset' },
-  { src: '/images/PNW/photo5.jpg', subtitle: 'Overlooking BC' },
-  { src: '/images/PNW/photo6.jpg', subtitle: 'Golden Ears' },
-  { src: '/images/PNW/photo7.jpg', subtitle: 'Golden Ears' },
-  { src: '/images/PNW/photo8.jpg', subtitle: 'Shelter above the clouds' },
-  { src: '/images/PNW/photo9.jpg', subtitle: 'Golden Ears' }
+  { src: '/images/pnw/photo1.jpg', subtitle: 'John diving into Raven Lake' },
+  { src: '/images/pnw/photo2.jpg', subtitle: 'Fresh huckleberries' },
+  { src: '/images/pnw/photo3.jpg', subtitle: 'Raven lake to ourselves' },
+  { src: '/images/pnw/photo4.jpg', subtitle: 'Silent Lakes at sunset' },
+  { src: '/images/pnw/photo5.jpg', subtitle: 'Overlooking BC' },
+  { src: '/images/pnw/photo6.jpg', subtitle: 'Golden Ears' },
+  { src: '/images/pnw/photo7.jpg', subtitle: 'Golden Ears' },
+  { src: '/images/pnw/photo8.jpg', subtitle: 'Shelter above the clouds' },
+  { src: '/images/pnw/photo9.jpg', subtitle: 'Golden Ears' }
 ];
 
 const PNW = () => {
