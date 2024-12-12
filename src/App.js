@@ -5,6 +5,7 @@ import Header from './components/Header'; // Import Header component
 import Footer from './components/Footer'; // Import Header component
 import Home from './pages/Home';
 import Japan from './pages/Japan';
+import PNW from './pages/PNW';
 // Import other pages as needed
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Routes> {/* Use Routes instead of Switch */}
           <Route path="/" element={<Home />} />
           <Route path="/japan" element={<Japan />} />
+          <Route path="/pnw" element={<PNW />} />
           {/* Add other routes */}
         </Routes>
         <Footer />

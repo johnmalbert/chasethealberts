@@ -14,7 +14,13 @@ const Header = () => {
     <header className="header">
       <div className="logo">
         <h1>
-          <Link to="/">Chase the Alberts</Link>
+          <Link to="/">
+            <img 
+              src="/images/banner.jpg" 
+              alt="chasethealberts" 
+              className="header-img" 
+            />
+          </Link>
         </h1>
       </div>
       
@@ -22,9 +28,7 @@ const Header = () => {
         <ul>
           <li><Link to="/">Home</Link></li>
           <li><Link to="/japan">Japan</Link></li>
-          <li><Link to="/backpacking">Backpacking</Link></li>
-          <li><Link to="/mountaineering">Mountaineering</Link></li>
-          <li><Link to="/our-dogs">Our Dogs</Link></li>
+          <li><Link to="/PNW">PNW</Link></li>
         </ul>
       </nav>
 

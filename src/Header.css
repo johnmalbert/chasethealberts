@@ -19,6 +19,12 @@
     color: var(--text-color);
 }
 
+.header-img {
+    width: 75px;
+    height: auto;
+    border-radius: 50%;
+}
+
 .logo a {
     text-decoration: none;
     color: var(--text-color);
@@ -97,5 +103,9 @@
     .logo h1 {
         font-size: 1.7rem;
         /* Slightly smaller font size for mobile */
+    }
+
+    .header-img {
+        display: none;
     }
 }

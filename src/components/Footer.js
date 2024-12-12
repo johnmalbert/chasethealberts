@@ -12,7 +12,7 @@ const Footer = () => {
         <a href="https://www.youtube.com/@chasethealberts" target="_blank" rel="noopener noreferrer">
           <i className="fab fa-youtube"></i>
         </a>
-        <a href="https://www.tiktok.com/chasethealberts" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.tiktok.com/@chasethealberts" target="_blank" rel="noopener noreferrer">
           <i className="fab fa-tiktok"></i>
         </a>
       </div>
