@@ -1,8 +1,21 @@
 /* Styling for the photo section */
 .photo-section {
-    column-count: 3; /* Adjust the number of columns */
+    column-count: 4; /* Default to 4 columns for larger screens */
     column-gap: 10px;
     padding: 5px;
+}
+
+/* Adjust the number of columns for different screen sizes */
+@media (max-width: 1024px) {
+    .photo-section {
+        column-count: 2; /* 2 columns for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .photo-section {
+        column-count: 2; /* 2 columns for small screens (mobile) */
+    }
 }
 
 /* Photo container to hold image and subtitle */
