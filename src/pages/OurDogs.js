@@ -24,13 +24,12 @@ const OurDogs = () => {
       src: "/images/dogs/photo4.jpg", // Replace with actual image path
       title: "I can communicate things to you without talking.",
       subtitle:
-        'Romans 8:26 – "In the same way, the Spirit helps us in our weakness. We do not know what we ought to pray for, but the Spirit himself intercedes for us through wordless groans."',
+        'Psalm 19:1-2 – "The heavens declare the glory of God; the skies proclaim the work of his hands. Day after day they pour forth speech; night after night they reveal knowledge."',
     },
     {
       src: "/images/dogs/photo5.jpg", // Replace with actual image path
       title: "I provide all that you need, don't try to steal food.",
-      subtitle:
-        'Philippians 4:19 – "And my God will meet all your needs according to the riches of his glory in Christ Jesus."',
+      subtitle: 'Matthew 6:26 – "Look at the birds of the air; they do not sow or reap or store away in barns, and yet your heavenly Father feeds them. Are you not much more valuable than they?"',
     },
     {
       src: "/images/dogs/photo6.jpg", // Replace with actual image path
@@ -86,7 +85,7 @@ const OurDogs = () => {
       src: "/images/dogs/photo14.jpg", // Replace with actual image path
       title: "Don't work too hard.",
       subtitle:
-        'Ecclesiastes 4:6 – "Better one handful with tranquillity than two handfuls with toil and chasing after the wind."',
+        'Psalm 127:2 – "In vain you rise early and stay up late, toiling for food to eat—for he grants sleep to those he loves."',
     },
     {
       src: "/images/dogs/photo15.jpg", // Replace with actual image path
