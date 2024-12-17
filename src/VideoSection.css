@@ -1,12 +1,14 @@
+/* Wrapper for the video to maintain aspect ratio */
 .video-wrapper {
     position: relative;
     padding-bottom: 56.25%; /* 16:9 aspect ratio */
     height: 0;
     overflow: hidden;
     background: #000;
-    max-width: 100%;
+    max-width: 100%; /* Ensure the video is responsive */
 }
 
+/* Styling for the iframe inside the wrapper */
 .video-wrapper iframe {
     position: absolute;
     top: 0;
@@ -15,20 +17,19 @@
     height: 100%;
 }
 
-/* For desktop - limit the width and height to ensure proportional size */
+/* Media query for larger screens (desktops) */
 @media (min-width: 1024px) {
     .video-wrapper {
         max-width: 800px; /* Limit the width on larger screens */
-        height: 0;
-        padding-bottom: 45%; /* Adjust to reduce the height slightly */
+        padding-bottom: 45%; /* Adjust to slightly reduce height */
         margin: 0 auto;   /* Center the video */
     }
 }
 
-/* Full width for smaller screens while retaining the aspect ratio */
+/* For smaller screens (tablets and phones) */
 @media (max-width: 1024px) {
     .video-wrapper {
         max-width: 100%;
-        padding-bottom: 56.25%; /* Maintain 16:9 ratio */
+        padding-bottom: 56.25%; /* Keep the 16:9 ratio for mobile */
     }
 }

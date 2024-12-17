@@ -1,0 +1,101 @@
+/* Take A Hike Page Styles */
+.take-a-hike-page {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #444444; /* Set the default text color for the whole page */
+}
+
+.take-a-hike-page h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #444;
+}
+
+/* Filters Section */
+.take-a-hike-page .filters {
+    display: flex;
+    justify-content: space-between; /* Ensures the filters are spaced evenly */
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.take-a-hike-page .filter {
+    flex: 1;
+    min-width: 200px; /* Adjusted to make sure it’s aligned properly */
+}
+
+.take-a-hike-page .filters select,
+.take-a-hike-page .filter input {
+    padding: 8px;
+    font-size: 1rem;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+.take-a-hike-page .filters select:focus,
+.take-a-hike-page .filter input:focus {
+    border-color: #0056b3;
+    outline: none;
+}
+
+.take-a-hike-page .filter label {
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 8px; /* Adds space between the label and input */
+    display: block; /* Ensures the label is on top of the input */
+}
+
+/* Photo Grid */
+.take-a-hike-page .photo-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.take-a-hike-page .photo-container {
+    width: 200px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.take-a-hike-page .hike-photo {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.take-a-hike-page .photo-title {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Hike Details */
+.take-a-hike-page .hike-details {
+    margin-top: 40px;
+}
+
+.take-a-hike-page .hike-photos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.take-a-hike-page .hike-photos img {
+    margin-top: 10px;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 3px solid #f0f0f0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.take-a-hike-page iframe {
+    margin-top: 20px;
+    width: 100%;
+}

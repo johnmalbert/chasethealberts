@@ -74,7 +74,14 @@ const Home = () => {
       {/* Featured Video Section */}
       <section className="featured-video">
         <h2>Featured Hiking Vlog</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/3Vvt5zx1STE?si=JDdBU_hscL90U6hs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" 
+          src="https://www.youtube.com/embed/3Vvt5zx1STE?si=JDdBU_hscL90U6hs" 
+          title="YouTube video player" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          referrerpolicy="strict-origin-when-cross-origin" 
+          allowfullscreen>
+        </iframe>
       </section>
 
     {/* About Us Section */}

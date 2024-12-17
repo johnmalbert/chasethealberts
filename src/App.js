@@ -6,6 +6,7 @@ import Footer from './components/Footer'; // Import Header component
 import Home from './pages/Home';
 import Japan from './pages/Japan';
 import PNW from './pages/PNW';
+import TakeAHike from './pages/TakeAHike';
 import OurDogs from './pages/OurDogs';
 // Import other pages as needed
 
@@ -19,6 +20,7 @@ function App() {
           <Route path="/japan" element={<Japan />} />
           <Route path="/pnw" element={<PNW />} />
           <Route path="/our-dogs" element={<OurDogs />} />
+          <Route path="/take-a-hike" element={<TakeAHike />} />
           {/* Add other routes */}
         </Routes>
         <Footer />
