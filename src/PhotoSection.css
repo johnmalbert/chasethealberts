@@ -40,22 +40,31 @@
     width: calc(100% + 10px);
 }
 
-/* Title inside the top of the image */
 .photo-title {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.4);
-    /* Semi-transparent background for readability */
-    color: white;
+    background-color: rgba(255, 255, 255, 0.6); /* Increase opacity for better contrast */
+    color: #2c3e50; /* Dark, muted color for text */
     text-align: center;
-    padding: 10px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    padding: 8px;
+    font-size: 0.9rem; /* Slightly smaller for a minimalist look */
+    font-weight: 300; /* Lighter font weight for hipster aesthetic */
+    letter-spacing: 1px; /* Add letter spacing for a modern touch */
+    font-family: 'Courier New', Courier, monospace; /* Trendy, typewriter-style font */
+    text-transform: uppercase; /* Uppercase for modern feel */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7); /* Stronger shadow for readability on dark backgrounds */
     z-index: 1;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2); /* Thin border at the bottom for a framed look */
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* Light shadow for lifted effect */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
 }
+
+.photo-title:hover {
+    background-color: rgba(255, 255, 255, 0.8); /* Even more solid on hover for readability */
+}
+
 
 /* Subtitle at the bottom of the image */
 .photo-subtitle {
@@ -93,29 +102,53 @@
     margin-bottom: 20px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Add slight shadow for emphasis */
     display: flex;
+    flex-direction: column; /* Make items stack on mobile */
     align-items: center;
-    justify-content: space-between;
 }
 
+/* Container for images and text */
 .dog-images-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
+/* Image styles */
 .dog-image {
     width: 150px;
     height: 150px;
     border-radius: 50%; /* Circular images */
     object-fit: cover;
-    margin: 0 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 0 20px;
 }
 
-p {
-    flex: 1;
-    margin: 0 20px;
-    text-align: justify;
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+    .lessons-section {
+        display: block;
+        padding: 10px;
+    }
+
+    .dog-images-container {
+        display: block; /* Stack images and text vertically */
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    .dog-image {
+        width: 120px;
+        height: 120px;
+        margin: 10px auto;
+    }
+
+    p {
+        margin: 20px 0;
+        text-align: center;
+        flex: none; /* Prevent text from flexing */
+    }
 }
 
 h1 {

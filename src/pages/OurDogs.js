@@ -93,6 +93,12 @@ const OurDogs = () => {
       subtitle:
         'Micah 6:8 – "He has shown you, O mortal, what is good. And what does the Lord require of you? To act justly and to love mercy and to walk humbly with your God."',
     },
+    {
+      src: "/images/dogs/photo16.jpg", // Replace with actual image path
+      title: "We have everything we need to worship God",
+      subtitle:
+        'Hebrews 13:15 – "Through Jesus, therefore, let us continually offer to God a sacrifice of praise—the fruit of lips that openly profess his name."',
+    }
   ];
 
   return (
@@ -103,7 +109,6 @@ const OurDogs = () => {
           <img src="/images/sahale.jpg" alt="Sahale" className="dog-image" />
           <p>
             Having dogs has taught me more about God than I ever imagined.
-            <br />
             Whether it's through our daily routines, hiking or backpacking,
             mealtimes, or any little unexpected thing they do, I find myself
             experiencing God more deeply when I'm alongside Sahale or Vesper.
