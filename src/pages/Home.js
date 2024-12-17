@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import PhotoSection from '../components/PhotoSection';
-import VideoSection from '../components/VideoSection';
 import useScrollAnimation from '../hooks/useScrollAnimation';
 import '../Home.css'; // Import styles for the page
 
@@ -39,13 +38,33 @@ const Home = () => {
     setFeaturedPhotos(shuffledPhotos);
   }, []);
 
-  const featuredVideoUrl = "https://www.youtube.com/embed/3Vvt5zx1STE?si=WC0URVTEDOVhaJ00";
-
   // Trigger scroll animations
   useScrollAnimation();
 
   return (
     <div className="home-container">
+      <div className="lessons-section">
+        <div className="dog-images-container">
+          <img src="/images/sahale.jpg" alt="Sahale" className="dog-image" />
+          <p>
+            <div className="centered-intro">
+              <b><i>We are @chasethealberts - John, Erin and Sahale. Thanks for visiting our site!</i></b>
+            </div>
+    
+            Every chance that we get, we are creating memories together and capturing images along the way, 
+            even if that means hauling a 3 telephoto lens up a Washington volcano. 
+            We live in Renton, Washington, and work a desk job Monday to Friday. 
+            <br />
+            <br />
+            Here you can find some of our favorite shots, a little more about us, plus a few other things. 
+            You can always reach out to us at chasethealberts@gmail.com, or any of the links at the bottom of the page. 
+            <br />
+            <br />
+            If you tap each image, you can see the subtitle with details/location!
+          </p>
+          <img src="/images/vesper.jpg" alt="Vesper" className="dog-image" />
+        </div>
+      </div>
       {/* Featured Photos Section */}
       <section className="featured-photos">
         <h2>Featured Photos</h2>
@@ -55,7 +74,7 @@ const Home = () => {
       {/* Featured Video Section */}
       <section className="featured-video">
         <h2>Featured Hiking Vlog</h2>
-        <VideoSection videoUrl={featuredVideoUrl} />
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/3Vvt5zx1STE?si=JDdBU_hscL90U6hs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </section>
 
     {/* About Us Section */}
@@ -68,9 +87,9 @@ const Home = () => {
           className="about-us-logo" 
         />
         <p>
-          We're the Alberts, a couple passionate about travel, backpacking, and mountaineering.
           We have found that sometimes the only way to recharge is to step away and unplug in the mountains, 
-          and these images attempt to capture that feeling.
+          and these images attempt to capture that feeling. If you'd like to request full-resolution images, 
+          send an email to chasethealberts@gmail.com!
         </p>
         <img 
           src="/images/profile.jpg" // Add your image source here
