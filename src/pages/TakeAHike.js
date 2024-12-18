@@ -116,7 +116,7 @@ const TakeAHike = () => {
             <strong>Wilderness Area:</strong> {selectedHike.wildernessArea}
           </p>
           <p>
-            <strong>Length:</strong> {selectedHike.length} miles
+            <strong>Hike Length:</strong> {selectedHike.length} miles
           </p>
           <p>
             <strong>Dogs Allowed:</strong>{" "}
@@ -127,7 +127,7 @@ const TakeAHike = () => {
           </p>
           <p>
             <strong>Permit:</strong>{" "}
-            {selectedHike.permit ? "Required" : "Not Required"}
+            {selectedHike.permit}
           </p>
           <p>
             <strong>Distance from Seattle:</strong>{" "}

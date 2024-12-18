@@ -3,15 +3,15 @@
 export const hikes = [
   {
     id: 1,
-    name: "Mount Daniel",
+    name: "Mount Daniel & Circle Lake",
     wildernessArea: "Alpine Lakes Wilderness",
     length: 20, // miles
     dogsAllowed: true,
     highlights: "Class 2 and 3 scramble",
     permit: "Self-permit",
     distanceFromSeattle: 110, // miles
-    coverPhotos: ["/images/photo7.jpg"],
-    photos: ["/images/hikes/daniel4.jpg", "images/hikes/daniel3.jpg"],
+    coverPhotos: ["/images/hikes/daniel3.jpg"],
+    photos: ["/images/hikes/daniel4.jpg", "images/hikes/daniel3.jpg", "images/hikes/daniel2.jpg", "images/hikes/daniel1.jpg"],
     youtubeVideo: "https://www.youtube.com/embed/C3Y3m85lJ3k?si=ukDIFoH3W_3lHwAk",
   },
   {
@@ -60,10 +60,10 @@ export const hikes = [
     length: 20, // miles
     dogsAllowed: true,
     highlights: "Cross over into Canada for this delightful summit, and sleep on top of platforms above the lakes below",
-    permit: "True",
+    permit: "BC Parks Backcountry Permit",
     distanceFromSeattle: 180, // miles
     coverPhotos: ["/images/hikes/goldenears3.jpg"],
-    photos: ["/images/hikes/goldenears1.jpg", "/images/hikes/goldenears2.jpg", "/images/hikes/goldenears3.jpg"],
+    photos: ["/images/hikes/goldenears1.jpg", "/images/hikes/goldenears2.jpg", "/images/hikes/goldenears3.jpg","/images/hikes/goldenears5.jpg", "/images/hikes/goldenears5.jpg","/images/hikes/goldenears6.jpg","/images/hikes/goldenears7.jpg","/images/hikes/goldenears8.jpg"],
     youtubeVideo: "https://www.youtube.com/embed/kjVNye2uVUs?si=W57Ic-5rBwI5_GM8",
   },
   {
@@ -78,6 +78,45 @@ export const hikes = [
     coverPhotos: ["/images/hikes/abernathy1.jpg"],
     photos: ["/images/hikes/abernathy1.jpg", "/images/hikes/abernathy2.jpg"],
     youtubeVideo: "https://www.youtube.com/embed/mDMWxQ8SSHc?si=f4N1i347DKnywDhP",
+  },
+  {
+    id: 7,
+    name: "Welcome Pass",
+    wildernessArea: "North Cascades",
+    length: 5, // miles
+    dogsAllowed: true,
+    highlights: "Scramble up this short but beautiful trail and spread out on High Divide, with Mount Baker right there.",
+    permit: "None",
+    distanceFromSeattle: 150, // miles
+    coverPhotos: ["/images/hikes/welcomepass2.jpg"],
+    photos: ["/images/hikes/welcomepass1.jpg", "/images/hikes/welcomepass2.jpg", "/images/hikes/welcomepass3.jpg", "/images/hikes/welcomepass4.jpg"],
+    youtubeVideo: "https://www.youtube.com/embed/qYvBYYy50e8?si=x1fM3mUWXZBvX2zp",
+  },
+  {
+    id: 8,
+    name: "Wing Lake, Black Peak",
+    wildernessArea: "North Cascades",
+    length: 12, // miles
+    dogsAllowed: true,
+    highlights: "Scramble up this scree covered class three peak, and camp and the gorgeous Wing Lake among the Larches",
+    permit: "None",
+    distanceFromSeattle: 200, // miles
+    coverPhotos: ["/images/hikes/winglake5.jpg"],
+    photos: ["/images/hikes/winglake1.jpg", "/images/hikes/winglake1.jpg", "/images/hikes/winglake3.jpg", "/images/hikes/winglake4.jpg"],
+    youtubeVideo: "https://www.youtube.com/embed/h0_UPXHUEXE?si=PW5EzfHlYowTZkLZ",
+  },
+  {
+    id: 9,
+    name: "Yellow Aster Butte",
+    wildernessArea: "North Cascades",
+    length: 10, // miles
+    dogsAllowed: true,
+    highlights: "Wonderful hike for all ages, camp among the tarns just below Yellow Aster Butte",
+    permit: "None",
+    distanceFromSeattle: 150, // miles
+    coverPhotos: ["/images/hikes/yellowaster1.jpg"],
+    photos: ["/images/hikes/yellowaster2.jpg", "/images/hikes/yellowaster3.jpg"],
+    youtubeVideo: "https://www.youtube.com/embed/qYvBYYy50e8?si=x1fM3mUWXZBvX2zp",
   },
   // {
   //   id: ,
