@@ -118,6 +118,19 @@ export const hikes = [
     photos: ["/images/hikes/yellowaster2.jpg", "/images/hikes/yellowaster3.jpg"],
     youtubeVideo: "https://www.youtube.com/embed/qYvBYYy50e8?si=x1fM3mUWXZBvX2zp",
   },
+  {
+    id: 10,
+    name: "Lake Edna",
+    wildernessArea: "Central Cascades",
+    length: 12, // miles
+    dogsAllowed: true,
+    highlights: "A less-traveled hike that climbs quickly and rewards with a serene alpine lake",
+    permit: "None",
+    distanceFromSeattle: 150, // miles
+    coverPhotos: ["/images/hikes/edna1.jpg"],
+    photos: ["/images/hikes/edna2.jpg", "/images/hikes/edna3.jpg"],
+    youtubeVideo: "https://www.youtube.com/embed/qYvBYYy50e8?si=x1fM3mUWXZBvX2zp",
+  },
   // {
   //   id: ,
   //   name: "",
