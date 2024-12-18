@@ -49,11 +49,12 @@ body {
     color: var(--secondary-color);
 }
 
-
-.featured-video h2 {
+.featured-video {
     font-size: 2rem;
     margin-bottom: 20px;
+    margin-top: 20px;
     color: var(--secondary-color);
+    text-align: center;
 }
 
 /* About Us Section */

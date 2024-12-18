@@ -96,6 +96,10 @@
 }
 
 .take-a-hike-page iframe {
-    margin-top: 20px;
-    width: 100%;
+    width: 560px; /* Set the width explicitly */
+    height: 315px; /* Set the height explicitly */
+    margin-top: 50px;
+    max-width: 100%; /* Ensure it doesn't exceed the container's width on small screens */
+    display: block; /* Ensures centering works */
+    margin: 0 auto; /* Optional: Center the iframe horizontally */
 }

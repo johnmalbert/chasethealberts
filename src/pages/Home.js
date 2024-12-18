@@ -88,11 +88,6 @@ const Home = () => {
     <section className="about-us">
       <h2>About Us</h2>
       <div className="about-us-content">
-        <img 
-          src="/images/logo.jpg" 
-          alt="Our Logo" 
-          className="about-us-logo" 
-        />
         <p>
           We have found that sometimes the only way to recharge is to step away and unplug in the mountains, 
           and these images attempt to capture that feeling. If you'd like to request full-resolution images, 
