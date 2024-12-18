@@ -102,7 +102,7 @@ export const hikes = [
     permit: "None",
     distanceFromSeattle: 200, // miles
     coverPhotos: ["/images/hikes/winglake5.jpg"],
-    photos: ["/images/hikes/winglake1.jpg", "/images/hikes/winglake1.jpg", "/images/hikes/winglake3.jpg", "/images/hikes/winglake4.jpg"],
+    photos: ["/images/hikes/winglake1.jpg", "/images/hikes/winglake2.jpg", "/images/hikes/winglake3.jpg", "/images/hikes/winglake4.jpg"],
     youtubeVideo: "https://www.youtube.com/embed/h0_UPXHUEXE?si=PW5EzfHlYowTZkLZ",
   },
   {
@@ -130,6 +130,32 @@ export const hikes = [
     coverPhotos: ["/images/hikes/edna1.jpg"],
     photos: ["/images/hikes/edna2.jpg", "/images/hikes/edna3.jpg"],
     youtubeVideo: "https://www.youtube.com/embed/qYvBYYy50e8?si=x1fM3mUWXZBvX2zp",
+  },
+  {
+    id: 11,
+    name: "Bean Creek Basin & Bean Peak",
+    wildernessArea: "Central Cascades",
+    length: 8, // miles
+    dogsAllowed: true,
+    highlights: "A great early-season hike while the rest of the state thaws out. Scramble up Bean Peak for views of the enchantments",
+    permit: "None",
+    distanceFromSeattle: 110, // miles
+    coverPhotos: ["/images/hikes/beanpeak5.jpg"],
+    photos: ["/images/hikes/beanpeak1.jpg", "/images/hikes/beanpeak3.jpg", "/images/hikes/beanpeak2.jpg", "/images/hikes/beanpeak4.jpg"],
+    youtubeVideo: "https://www.youtube.com/embed/pO6FdPXZls8?si=VbuFjdJz2iWX8yGk",
+  },
+  {
+    id: 12,
+    name: "Eagle Lakes",
+    wildernessArea: "Methow/Sawtooth",
+    length: 13, // miles
+    dogsAllowed: true,
+    highlights: "Looking for a larch-march? Eagle Lakes is worth the long drive. Bring a fishing pole for peak fun!",
+    permit: "None",
+    distanceFromSeattle: 230, // miles
+    coverPhotos: ["/images/hikes/eaglelakes2.jpg"],
+    photos: ["/images/hikes/eaglelakes3.jpg", "/images/hikes/eaglelakes4.jpg", "/images/hikes/eaglelakes5.jpg"],
+    youtubeVideo: "https://www.youtube.com/embed/4Ew9Fie_Dks?si=DDsloIXUEM1W1aar",
   },
   // {
   //   id: ,
