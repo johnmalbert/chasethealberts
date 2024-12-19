@@ -94,7 +94,8 @@
 
 .take-a-hike-page .hike-photos img {
     margin-top: 10px;
-    max-height: 300px;
+    max-height: 400px;
+    max-width: 375px;
     object-fit: cover;
     border-radius: 8px;
     border: 3px solid #f0f0f0;

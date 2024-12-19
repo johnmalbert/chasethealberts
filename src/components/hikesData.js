@@ -202,7 +202,7 @@ export const hikes = [
     wildernessArea: "North Cascades",
     length: 12, // miles
     dogsAllowed: true,
-    highlights: "Experience a day or two on the PCT from Rainy Pass of Highway 20",
+    highlights: "Experience a day or two of North Cascades goodness on the PCT from Rainy Pass off Highway 20",
     permit: "None",
     distanceFromSeattle: 150, // miles
     coverPhotos: ["/images/hikes/cutthroat1.jpg"],
@@ -245,7 +245,7 @@ export const hikes = [
     permit: "Self-Permit",
     distanceFromSeattle: 150, // miles
     coverPhotos: ["/images/hikes/goatrocks2.jpg"],
-    photos: ["/images/hikes/goatrocks1.jpg", "/images/hikes/goatrocks3.jpg", "/images/hikes/goatrocks4.jpg", "/images/hikes/goatrocks5.jpg", "/images/hikes/goatrocks6.jpg"],
+    photos: ["/images/hikes/goatrocks1.jpg", "/images/hikes/goatrocks3.jpg", "/images/hikes/goatrocks4.jpg", "/images/hikes/goatrocks5.jpg"],
     youtubeVideo: "",
   },
   {
@@ -258,8 +258,86 @@ export const hikes = [
     permit: "false",
     distanceFromSeattle: 100, // miles
     coverPhotos: ["/images/hikes/highrock1.jpg"],
-    photos: ["/images/hikes/highrock1.jpg", "/images/hikes/highrock3.jpg", "/images/hikes/highrock4.jpg", "/images/hikes/highrock5.jpg"],
+    photos: ["/images/hikes/highrock2.jpg", "/images/hikes/highrock3.jpg", "/images/hikes/highrock4.jpg", "/images/hikes/highrock5.jpg"],
     youtubeVideo: "",
+  },
+  {
+    id: 21,
+    name: "Kelly Butte",
+    wildernessArea: "Mt. Rainier Area",
+    length: 4, // miles
+    dogsAllowed: true,
+    highlights: "Looking for a quick after-work hike? This will get you right up in front of Mount Rainier and quickly, the perfect date spot.",
+    permit: "false",
+    distanceFromSeattle: 100, // miles
+    coverPhotos: ["/images/hikes/kelly1.jpg"],
+    photos: ["/images/hikes/kelly2.jpg", "/images/hikes/kelly3.jpg", "/images/hikes/kelly4.jpg", "/images/hikes/kelly5.jpg"],
+    youtubeVideo: "",
+  },
+  {
+    id: 22,
+    name: "Lyman Lake & Spider Gap",
+    wildernessArea: "Entiat Mountains",
+    length: 21, // miles
+    dogsAllowed: true,
+    highlights: "This hike just gets better and better! After leaving the car, you will feel miles from civilization. Be sure to take a dip in the glacier water",
+    permit: "Self-permit",
+    distanceFromSeattle: 150, // miles
+    coverPhotos: ["/images/hikes/lyman1.jpg"],
+    photos: ["/images/hikes/lyman2.jpg", "/images/hikes/lyman3.jpg", "/images/hikes/lyman4.jpg"],
+    youtubeVideo: "https://www.youtube.com/embed/5VBIEcwxFn8?si=iW51SObAG3ShqXV1",
+  },
+  {
+    id: 23,
+    name: "Navaho Peak",
+    wildernessArea: "Snoqualmie Region",
+    length: 14, // miles
+    dogsAllowed: true,
+    highlights: "Rewarding summit views, camp up on the ridge for views of the Enchantments! ",
+    permit: "None",
+    distanceFromSeattle: 12, // miles
+    coverPhotos: ["/images/hikes/navaho4.jpg"],
+    photos: ["/images/hikes/navaho2.jpg", "/images/hikes/navaho3.jpg", "/images/hikes/navaho1.jpg"],
+    youtubeVideo: "https://www.youtube.com/embed/5VBIEcwxFn8?si=iW51SObAG3ShqXV1",
+  },
+  {
+    id: 24,
+    name: "Raven Lake",
+    wildernessArea: "Mountain Loop Highway",
+    length: 8, // miles
+    dogsAllowed: true,
+    highlights: "Good luck finding this one!",
+    permit: "None",
+    distanceFromSeattle: 80, // miles
+    coverPhotos: ["/images/hikes/raven1.jpg"],
+    photos: ["/images/hikes/raven1.jpg", "/images/hikes/raven2.jpg"],
+    youtubeVideo: "",
+  },
+  {
+    id: 25,
+    name: "Alice and Toxaway Lakes",
+    wildernessArea: "Sawtooth Wilderness",
+    length: 8, // miles
+    dogsAllowed: true,
+    highlights: "Good luck finding this one!",
+    permit: "None",
+    distanceFromSeattle: 400, // miles
+    coverPhotos: ["/images/hikes/sawtooths1.jpg"],
+    photos: ["/images/hikes/sawtooths2.jpg", "/images/hikes/sawtooths3.jpg", "/images/hikes/sawtooths4.jpg"],
+    youtubeVideo: "https://www.youtube.com/embed/YBhdPGa0M80?si=JW32lNDDSmRY81bI",
+  },
+  {
+    id: 26,
+    name: "South Kaibab to Bright Angel",
+    wildernessArea: "Grand Canyon National Park",
+    length: 19, // miles
+    dogsAllowed: false,
+    highlights: "Good luck finding this one!",
+    permit: "None",
+    distanceFromSeattle: 1200, // miles
+    coverPhotos: ["/images/hikes/grandcanyon1.jpg"],
+    photos: ["/images/hikes/grandcanyon2.jpg", "/images/hikes/grandcanyon3.jpg", "/images/hikes/grandcanyon4.jpg", "/images/hikes/grandcanyon5.jpg"],
+    youtubeVideo: "https://www.youtube.com/embed/9YppPsLbJms?si=HHNlKnqkfmh9qZBl",
   }
   // {
   //   id: ,
