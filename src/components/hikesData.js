@@ -192,8 +192,8 @@ export const hikes = [
     highlights: "Looking for wildflowers and an early-season day hike? Check out the Columbia River Gorge!",
     permit: "None",
     distanceFromSeattle: 80, // miles
-    coverPhotos: ["/images/hikes/columbia1.jpg"],
-    photos: ["/images/hikes/columbia2.jpg", "/images/hikes/columbia3.jpg", "/images/hikes/columbia4.jpg", "/images/hikes/columbia5.jpg", "/images/hikes/columbia6.jpg", "/images/hikes/columbia7.jpg"],
+    coverPhotos: ["/images/hikes/columbia5.jpg"],
+    photos: ["/images/hikes/columbia1.jpg", "/images/hikes/columbia3.jpg", "/images/hikes/columbia4.jpg", "/images/hikes/columbia5.jpg", "/images/hikes/columbia6.jpg", "/images/hikes/columbia7.jpg"],
     youtubeVideo: "",
   },
   {
@@ -219,8 +219,47 @@ export const hikes = [
     permit: "None",
     distanceFromSeattle: 150, // miles
     coverPhotos: ["/images/hikes/enchantments1.jpg"],
-    photos: ["/images/hikes/enchantments.jpg", "/images/hikes/enchantments3.jpg", "/images/hikes/enchantments4.jpg", "/images/hikes/enchantments5.jpg"],
+    photos: ["/images/hikes/enchantments2.jpg", "/images/hikes/enchantments3.jpg", "/images/hikes/enchantments4.jpg", "/images/hikes/enchantments5.jpg"],
     youtubeVideo: "https://www.youtube.com/embed/7s5W8BCihMw?si=yFa784hlnf1BEXB8",
+  },
+  {
+    id: 18,
+    name: "Mount St. Helens",
+    wildernessArea: "Mt. St. Helens",
+    length: 10, // miles
+    dogsAllowed: false,
+    highlights: "This hike is a little easier than it was in 1979. Climb an active volcano and look down on the crater!",
+    permit: "Required",
+    distanceFromSeattle: 150, // miles
+    coverPhotos: ["/images/hikes/helens1.jpg"],
+    photos: ["/images/hikes/helens2.jpg", "/images/hikes/helens3.jpg", "/images/hikes/helens4.jpg", "/images/hikes/helens5.jpg", "/images/hikes/helens6.jpg"],
+    youtubeVideo: "https://www.youtube.com/embed/lSVY447Dgyk?si=k9YK5W9mBbcsAPYy",
+  },
+  {
+    id: 19,
+    name: "Old Snowy, Goat Lake",
+    wildernessArea: "Goat Rocks Wilderness",
+    length: 17, // miles
+    dogsAllowed: true,
+    highlights: "Goat Rocks is a must-visit. Unlike forested mountains in the North Cascades, experience expansive views right out of the car.",
+    permit: "Self-Permit",
+    distanceFromSeattle: 150, // miles
+    coverPhotos: ["/images/hikes/goatrocks2.jpg"],
+    photos: ["/images/hikes/goatrocks1.jpg", "/images/hikes/goatrocks3.jpg", "/images/hikes/goatrocks4.jpg", "/images/hikes/goatrocks5.jpg", "/images/hikes/goatrocks6.jpg"],
+    youtubeVideo: "",
+  },
+  {
+    id: 20,
+    name: "High Rock Lookout",
+    wildernessArea: "South Cascades",
+    length: 4, // miles
+    dogsAllowed: true,
+    highlights: "Looking for a quick after-work hike? This will get you right up in front of Mount Rainier and quickly",
+    permit: "false",
+    distanceFromSeattle: 100, // miles
+    coverPhotos: ["/images/hikes/highrock1.jpg"],
+    photos: ["/images/hikes/highrock1.jpg", "/images/hikes/highrock3.jpg", "/images/hikes/highrock4.jpg", "/images/hikes/highrock5.jpg"],
+    youtubeVideo: "",
   }
   // {
   //   id: ,
