@@ -102,7 +102,7 @@ export const hikes = [
     permit: "None",
     distanceFromSeattle: 200, // miles
     coverPhotos: ["/images/hikes/winglake5.jpg"],
-    photos: ["/images/hikes/winglake1.jpg", "/images/hikes/winglake1.jpg", "/images/hikes/winglake3.jpg", "/images/hikes/winglake4.jpg"],
+    photos: ["/images/hikes/winglake1.jpg", "/images/hikes/winglake2.jpg", "/images/hikes/winglake3.jpg", "/images/hikes/winglake4.jpg"],
     youtubeVideo: "https://www.youtube.com/embed/h0_UPXHUEXE?si=PW5EzfHlYowTZkLZ",
   },
   {
@@ -131,7 +131,6 @@ export const hikes = [
     photos: ["/images/hikes/edna2.jpg", "/images/hikes/edna3.jpg"],
     youtubeVideo: "https://www.youtube.com/embed/qYvBYYy50e8?si=x1fM3mUWXZBvX2zp",
   },
-  
   {
     id: 11,
     name: "Bean Creek Basin & Bean Peak",
@@ -222,7 +221,7 @@ export const hikes = [
     coverPhotos: ["/images/hikes/enchantments1.jpg"],
     photos: ["/images/hikes/enchantments.jpg", "/images/hikes/enchantments3.jpg", "/images/hikes/enchantments4.jpg", "/images/hikes/enchantments5.jpg"],
     youtubeVideo: "https://www.youtube.com/embed/7s5W8BCihMw?si=yFa784hlnf1BEXB8",
-  },
+  }
   // {
   //   id: ,
   //   name: "",

@@ -2,7 +2,8 @@
 .take-a-hike-page {
     padding: 20px;
     font-family: Arial, sans-serif;
-    color: #444444; /* Set the default text color for the whole page */
+    color: #444444;
+    /* Set the default text color for the whole page */
 }
 
 .take-a-hike-page h1 {
@@ -14,7 +15,8 @@
 /* Filters Section */
 .take-a-hike-page .filters {
     display: flex;
-    justify-content: space-between; /* Ensures the filters are spaced evenly */
+    justify-content: space-between;
+    /* Ensures the filters are spaced evenly */
     flex-wrap: wrap;
     gap: 15px;
     margin-bottom: 30px;
@@ -22,7 +24,9 @@
 
 .take-a-hike-page .filter {
     flex: 1;
-    min-width: 200px; /* Adjusted to make sure it’s aligned properly */
+    min-width: 200px;
+    /* Adjusted to make sure it’s aligned properly */
+    margin: 10px;
 }
 
 .take-a-hike-page .filters select,
@@ -44,8 +48,10 @@
 .take-a-hike-page .filter label {
     font-weight: bold;
     color: #444;
-    margin-bottom: 8px; /* Adds space between the label and input */
-    display: block; /* Ensures the label is on top of the input */
+    margin-bottom: 8px;
+    /* Adds space between the label and input */
+    display: block;
+    /* Ensures the label is on top of the input */
 }
 
 /* Photo Grid */
@@ -96,10 +102,36 @@
 }
 
 .take-a-hike-page iframe {
-    width: 560px; /* Set the width explicitly */
-    height: 315px; /* Set the height explicitly */
+    width: 560px;
+    /* Set the width explicitly */
+    height: 315px;
+    /* Set the height explicitly */
     margin-top: 50px;
-    max-width: 100%; /* Ensure it doesn't exceed the container's width on small screens */
-    display: block; /* Ensures centering works */
-    margin: 0 auto; /* Optional: Center the iframe horizontally */
+    max-width: 100%;
+    /* Ensure it doesn't exceed the container's width on small screens */
+    display: block;
+    /* Ensures centering works */
+    margin: 0 auto;
+    /* Optional: Center the iframe horizontally */
+}
+
+/* Styles for the photo grid */
+.take-a-hike-page .photo-grid .photo-container {
+    transition: transform 0.3s ease, filter 0.3s ease;
+    /* Smooth transition for both transform and filter */
+}
+
+.take-a-hike-page .photo-grid .photo-container.selected .hike-photo {
+    transform: scale(1.1);
+    /* Expand the image by 10% */
+}
+
+.take-a-hike-page .photo-grid .photo-container.grayscale .hike-photo {
+    filter: grayscale(100%);
+    /* Apply grayscale to unselected images */
+}
+
+.take-a-hike-page .photo-grid .photo-container.selected .hike-photo {
+    filter: none;
+    /* Remove grayscale for the selected image */
 }
