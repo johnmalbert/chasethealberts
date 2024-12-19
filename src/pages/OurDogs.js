@@ -98,6 +98,12 @@ const OurDogs = () => {
       title: "We have everything we need to worship God",
       subtitle:
         'Hebrews 13:15 – "Through Jesus, therefore, let us continually offer to God a sacrifice of praise—the fruit of lips that openly profess his name."',
+    },
+    {
+      src: "/images/hikes/yellowaster1.jpg", // Replace with actual image path
+      title: "If you keep asking, eventually you will get what you're asking for.",
+      subtitle:
+        'James 1:6 – "But when you ask, you must believe and not doubt, because the one who doubts is like a wave of the sea, blown and tossed by the wind."',
     }
   ];
 

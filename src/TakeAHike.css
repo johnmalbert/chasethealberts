@@ -102,6 +102,10 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.take-a-hike-page h2 {
+    text-align: center;
+}
+
 .take-a-hike-page iframe {
     width: 560px;
     /* Set the width explicitly */
