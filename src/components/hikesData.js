@@ -131,6 +131,98 @@ export const hikes = [
     photos: ["/images/hikes/edna2.jpg", "/images/hikes/edna3.jpg"],
     youtubeVideo: "https://www.youtube.com/embed/qYvBYYy50e8?si=x1fM3mUWXZBvX2zp",
   },
+  
+  {
+    id: 11,
+    name: "Bean Creek Basin & Bean Peak",
+    wildernessArea: "Central Cascades",
+    length: 8, // miles
+    dogsAllowed: true,
+    highlights: "A great early-season hike while the rest of the state thaws out. Scramble up Bean Peak for views of the enchantments",
+    permit: "None",
+    distanceFromSeattle: 110, // miles
+    coverPhotos: ["/images/hikes/beanpeak5.jpg"],
+    photos: ["/images/hikes/beanpeak1.jpg", "/images/hikes/beanpeak3.jpg", "/images/hikes/beanpeak2.jpg", "/images/hikes/beanpeak4.jpg"],
+    youtubeVideo: "https://www.youtube.com/embed/pO6FdPXZls8?si=VbuFjdJz2iWX8yGk",
+  },
+  {
+    id: 12,
+    name: "Eagle Lakes",
+    wildernessArea: "Methow/Sawtooth",
+    length: 13, // miles
+    dogsAllowed: true,
+    highlights: "Looking for a larch-march? Eagle Lakes is worth the long drive. Bring a fishing pole for peak fun!",
+    permit: "None",
+    distanceFromSeattle: 230, // miles
+    coverPhotos: ["/images/hikes/eaglelakes2.jpg"],
+    photos: ["/images/hikes/eaglelakes3.jpg", "/images/hikes/eaglelakes4.jpg", "/images/hikes/eaglelakes5.jpg"],
+    youtubeVideo: "https://www.youtube.com/embed/4Ew9Fie_Dks?si=DDsloIXUEM1W1aar",
+  },
+  {
+    id: 16,
+    name: "Baldy Peak",
+    wildernessArea: "Olympics",
+    length: 8, // miles
+    dogsAllowed: true,
+    highlights: "A less-traveled hike that climbs quickly and rewards with a open views over the Olympics",
+    permit: "None",
+    distanceFromSeattle: 150, // miles
+    coverPhotos: ["/images/hikes/baldy1.jpg"],
+    photos: ["/images/hikes/baldy2.jpg", "/images/hikes/baldy3.jpg", "/images/hikes/baldy4.jpg", "/images/hikes/baldy5.jpg"],
+    youtubeVideo: "https://www.youtube.com/embed/F8QmlN0mWPI?si=idDYQSi-oKmKgagI",
+  },
+  {
+    id: 17,
+    name: "Barclay Lake",
+    wildernessArea: "Central Cascades",
+    length: 5, // miles
+    dogsAllowed: true,
+    highlights: "A perfect family friendly day hike or first-time backpacking trip",
+    permit: "None",
+    distanceFromSeattle: 80, // miles
+    coverPhotos: ["/images/hikes/barclay1.jpg"],
+    photos: ["/images/hikes/barclay2.jpg", "/images/hikes/barclay3.jpg", "/images/hikes/barclay4.jpg"],
+    youtubeVideo: "https://www.youtube.com/embed/giCEsdDNZj0?si=Eayb6DBGRU5DtTbQ",
+  },
+  {
+    id: 13,
+    name: "Columbia River Gorge",
+    wildernessArea: "Southern Washington",
+    length: 5, // miles
+    dogsAllowed: true,
+    highlights: "Looking for wildflowers and an early-season day hike? Check out the Columbia River Gorge!",
+    permit: "None",
+    distanceFromSeattle: 80, // miles
+    coverPhotos: ["/images/hikes/columbia1.jpg"],
+    photos: ["/images/hikes/columbia2.jpg", "/images/hikes/columbia3.jpg", "/images/hikes/columbia4.jpg", "/images/hikes/columbia5.jpg", "/images/hikes/columbia6.jpg", "/images/hikes/columbia7.jpg"],
+    youtubeVideo: "",
+  },
+  {
+    id: 14,
+    name: "Cutthroat Pass",
+    wildernessArea: "North Cascades",
+    length: 12, // miles
+    dogsAllowed: true,
+    highlights: "Experience a day or two on the PCT from Rainy Pass of Highway 20",
+    permit: "None",
+    distanceFromSeattle: 150, // miles
+    coverPhotos: ["/images/hikes/cutthroat1.jpg"],
+    photos: ["/images/hikes/cutthroat2.jpg", "/images/hikes/cutthroat3.jpg", "/images/hikes/cutthroat4.jpg"],
+    youtubeVideo: "https://www.youtube.com/embed/7s5W8BCihMw?si=yFa784hlnf1BEXB8",
+  },
+  {
+    id: 15,
+    name: "The Enchantments",
+    wildernessArea: "Alpine Lakes Wilderness",
+    length: 20, // miles
+    dogsAllowed: false,
+    highlights: "Possibly Washington's most famous hike. Enter the lottery to obtain a permit, and you won't forget it!",
+    permit: "None",
+    distanceFromSeattle: 150, // miles
+    coverPhotos: ["/images/hikes/enchantments1.jpg"],
+    photos: ["/images/hikes/enchantments.jpg", "/images/hikes/enchantments3.jpg", "/images/hikes/enchantments4.jpg", "/images/hikes/enchantments5.jpg"],
+    youtubeVideo: "https://www.youtube.com/embed/7s5W8BCihMw?si=yFa784hlnf1BEXB8",
+  },
   // {
   //   id: ,
   //   name: "",
