@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { hikes } from "../components/hikesData"; // Import the hikes data from hikesData.js
 import "../TakeAHike.css"; // Import styles for the page
 
@@ -8,6 +8,9 @@ const TakeAHike = () => {
     wildernessArea: "",
   });
   const [selectedHike, setSelectedHike] = useState(null);
+
+  // Reference for the hike details section
+  const hikeDetailsRef = useRef(null);
 
   // Filter hikes based on selected filters
   const filteredHikes = hikes.filter((hike) => {
@@ -27,6 +30,13 @@ const TakeAHike = () => {
   const handleHikeClick = (hike) => {
     setSelectedHike(hike);
   };
+
+  // Effect to scroll to the hike details section after selecting a hike
+  useEffect(() => {
+    if (selectedHike && hikeDetailsRef.current) {
+      hikeDetailsRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  }, [selectedHike]); // This will trigger the scroll after selectedHike changes
 
   return (
     <div className="take-a-hike-page">
@@ -99,7 +109,7 @@ const TakeAHike = () => {
 
       {/* Display Hike Details */}
       {selectedHike && (
-        <div className="hike-details">
+        <div className="hike-details" ref={hikeDetailsRef}>
           <h2>{selectedHike.name}</h2>
           <p>
             <strong>Wilderness Area:</strong> {selectedHike.wildernessArea}
@@ -135,8 +145,8 @@ const TakeAHike = () => {
           <section className="featured-video">
             {selectedHike.youtubeVideo && (
               <iframe
-                width="500"
-                height="300S"
+                width="560"
+                height="315"
                 src={selectedHike.youtubeVideo}
                 title="YouTube video player"
                 frameBorder="0"
