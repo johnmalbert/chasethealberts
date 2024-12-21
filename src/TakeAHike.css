@@ -127,7 +127,7 @@
 }
 
 .take-a-hike-page .photo-grid .photo-container.selected .hike-photo {
-    transform: scale(1.1);
+    transform: scale(1.0);
     /* Expand the image by 10% */
 }
 

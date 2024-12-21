@@ -37,7 +37,7 @@
 
 /* Animate image size when clicked */
 .photo-container.active .photo {
-    width: calc(100% + 10px);
+    width: calc(100%);
 }
 
 .photo-title {
