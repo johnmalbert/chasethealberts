@@ -84,6 +84,13 @@ const TakeAHike = () => {
       </div>
 
       {/* Photo Grid */}
+      <div className="centered-intro">
+        <b>
+          <i>
+            Select a hike for details
+          </i>
+        </b>
+      </div>
       <div className="photo-grid">
         {filteredHikes.map((hike) => (
           <div

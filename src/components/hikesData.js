@@ -63,7 +63,7 @@ export const hikes = [
     permit: "BC Parks Backcountry Permit",
     distanceFromSeattle: 180, // miles
     coverPhotos: ["/images/hikes/goldenears3.jpg"],
-    photos: ["/images/hikes/goldenears1.jpg", "/images/hikes/goldenears2.jpg", "/images/hikes/goldenears3.jpg","/images/hikes/goldenears5.jpg", "/images/hikes/goldenears5.jpg","/images/hikes/goldenears6.jpg","/images/hikes/goldenears7.jpg","/images/hikes/goldenears8.jpg"],
+    photos: ["/images/hikes/goldenears1.jpg", "/images/hikes/goldenears2.jpg", "/images/hikes/goldenears3.jpg","/images/hikes/goldenears4.jpg", "/images/hikes/goldenears5.jpg","/images/hikes/goldenears6.jpg","/images/hikes/goldenears7.jpg","/images/hikes/goldenears8.jpg"],
     youtubeVideo: "https://www.youtube.com/embed/kjVNye2uVUs?si=W57Ic-5rBwI5_GM8",
   },
   {
@@ -129,7 +129,7 @@ export const hikes = [
     distanceFromSeattle: 150, // miles
     coverPhotos: ["/images/hikes/edna1.jpg"],
     photos: ["/images/hikes/edna2.jpg", "/images/hikes/edna3.jpg"],
-    youtubeVideo: "https://www.youtube.com/embed/qYvBYYy50e8?si=x1fM3mUWXZBvX2zp",
+    youtubeVideo: "",
   },
   {
     id: 11,
@@ -220,7 +220,7 @@ export const hikes = [
     distanceFromSeattle: 150, // miles
     coverPhotos: ["/images/hikes/enchantments1.jpg"],
     photos: ["/images/hikes/enchantments2.jpg", "/images/hikes/enchantments3.jpg", "/images/hikes/enchantments4.jpg", "/images/hikes/enchantments5.jpg"],
-    youtubeVideo: "https://www.youtube.com/embed/7s5W8BCihMw?si=yFa784hlnf1BEXB8",
+    youtubeVideo: "https://www.youtube.com/embed/gUbGl3ILEJ0?si=1mH8-QRUdr7on5S5",
   },
   {
     id: 18,
@@ -298,7 +298,7 @@ export const hikes = [
     distanceFromSeattle: 12, // miles
     coverPhotos: ["/images/hikes/navaho4.jpg"],
     photos: ["/images/hikes/navaho2.jpg", "/images/hikes/navaho3.jpg", "/images/hikes/navaho1.jpg"],
-    youtubeVideo: "https://www.youtube.com/embed/5VBIEcwxFn8?si=iW51SObAG3ShqXV1",
+    youtubeVideo: "https://www.youtube.com/embed/bet9iFIxsfA?si=WM2g8EWlT4D33n31",
   },
   {
     id: 24,

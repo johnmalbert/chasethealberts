@@ -73,6 +73,10 @@
     border-radius: 5px;
 }
 
+.take-a-hike-page .hike-photo:hover {
+    transform: scale(1.1); /* Increases the size to 1.1 times */
+}
+
 .take-a-hike-page .photo-title {
     margin-top: 10px;
     font-weight: bold;
