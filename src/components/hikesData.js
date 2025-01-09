@@ -338,6 +338,19 @@ export const hikes = [
     coverPhotos: ["/images/hikes/grandcanyon1.jpg"],
     photos: ["/images/hikes/grandcanyon2.jpg", "/images/hikes/grandcanyon3.jpg", "/images/hikes/grandcanyon4.jpg", "/images/hikes/grandcanyon5.jpg"],
     youtubeVideo: "https://www.youtube.com/embed/9YppPsLbJms?si=HHNlKnqkfmh9qZBl",
+  },
+  {
+    id: 27,
+    name: "Glacier Lake",
+    wildernessArea: "Alpine Lakes Wilderness",
+    length: 11, // miles
+    dogsAllowed: true,
+    highlights: "Scramble down to a beautiful lake with a waterfall flowing into it, and try the scramble up to Chickamin Peak",
+    permit: "None",
+    distanceFromSeattle: 70, // miles
+    coverPhotos: ["/images/hikes/glacier1.jpg"],
+    photos: ["/images/hikes/glacier2.jpg", "/images/hikes/glacier3.jpg"],
+    youtubeVideo: "https://www.youtube.com/embed/U0C6nXE8-zI?si=ox575iIu8yRYoGfk",
   }
   // {
   //   id: ,
