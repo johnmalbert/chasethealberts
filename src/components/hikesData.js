@@ -348,8 +348,8 @@ export const hikes = [
     highlights: "Scramble down to a beautiful lake with a waterfall flowing into it, and try the scramble up to Chickamin Peak",
     permit: "None",
     distanceFromSeattle: 70, // miles
-    coverPhotos: ["/images/hikes/glacier1.jpg"],
-    photos: ["/images/hikes/glacier2.jpg", "/images/hikes/glacier3.jpg"],
+    coverPhotos: ["/images/hikes/glacier10.jpg"],
+    photos: ["/images/hikes/glacier20.jpg", "/images/hikes/glacier30.jpg"],
     youtubeVideo: "https://www.youtube.com/embed/U0C6nXE8-zI?si=ox575iIu8yRYoGfk",
   }
   // {

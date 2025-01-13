@@ -144,3 +144,59 @@
     filter: none;
     /* Remove grayscale for the selected image */
 }
+
+.take-a-hike-page .hike-details-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    max-width: 600px;
+    margin: 40px auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.take-a-hike-page .hike-details-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.take-a-hike-page .hike-details-card h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.take-a-hike-page .hike-details-card .hike-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    font-size: 1rem;
+    color: #555;
+}
+
+.take-a-hike-page .hike-details-card .hike-info p {
+    margin: 0;
+}
+
+.take-a-hike-page .hike-details-card .hike-info p strong {
+    font-weight: bold;
+    color: #333;
+}
+
+.take-a-hike-page .hike-details-card .hike-info p:nth-child(odd) {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.take-a-hike-page .hike-details-card .hike-info p:nth-child(even) {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+@media (max-width: 600px) {
+    .take-a-hike-page .hike-details-card .hike-info {
+        grid-template-columns: 1fr;
+    }
+}

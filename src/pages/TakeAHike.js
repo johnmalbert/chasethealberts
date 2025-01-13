@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { hikes } from "../components/hikesData"; // Import the hikes data from hikesData.js
 import "../TakeAHike.css"; // Import styles for the page
+import { details } from "framer-motion/client";
 
 const TakeAHike = () => {
   const [selectedFilters, setSelectedFilters] = useState({
@@ -117,27 +118,17 @@ const TakeAHike = () => {
       {/* Display Hike Details */}
       {selectedHike && (
         <div className="hike-details" ref={hikeDetailsRef}>
-          <h2>{selectedHike.name}</h2>
-          <p>
-            <strong>Wilderness Area:</strong> {selectedHike.wildernessArea}
-          </p>
-          <p>
-            <strong>Hike Length:</strong> {selectedHike.length} miles
-          </p>
-          <p>
-            <strong>Dogs Allowed:</strong>{" "}
-            {selectedHike.dogsAllowed ? "Yes" : "No"}
-          </p>
-          <p>
-            <strong>Highlights:</strong> {selectedHike.highlights}
-          </p>
-          <p>
-            <strong>Permit:</strong> {selectedHike.permit}
-          </p>
-          <p>
-            <strong>Distance from Seattle:</strong>{" "}
-            {selectedHike.distanceFromSeattle} miles
-          </p>
+          <div className="hike-details-card" ref={hikeDetailsRef}>
+            <h2>{selectedHike.name}</h2>
+            <div className="hike-info">
+              <p><strong>Wilderness Area:</strong> {selectedHike.wildernessArea}</p>
+              <p><strong>Highlights:</strong> {selectedHike.highlights}</p>
+              <p><strong>Hike Length:</strong> {selectedHike.length} miles</p>
+              <p><strong>Dogs Allowed:</strong> {selectedHike.dogsAllowed ? "Yes" : "No"}</p>
+              <p><strong>Permit:</strong> {selectedHike.permit}</p>
+              <p><strong>Distance from Seattle:</strong> {selectedHike.distanceFromSeattle} miles</p>
+            </div>
+          </div>
 
           <div className="hike-photos">
             {selectedHike.photos.map((photo, index) => (
