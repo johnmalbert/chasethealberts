@@ -351,6 +351,19 @@ export const hikes = [
     coverPhotos: ["/images/hikes/glacier10.jpg"],
     photos: ["/images/hikes/glacier20.jpg", "/images/hikes/glacier30.jpg"],
     youtubeVideo: "https://www.youtube.com/embed/U0C6nXE8-zI?si=ox575iIu8yRYoGfk",
+  },
+  {
+    id: 28,
+    name: "Chiwawa Mountain",
+    wildernessArea: "Glacier Peak Wilderness",
+    length: 13, // miles
+    dogsAllowed: true,
+    highlights: "This is a very difficult and unmarked scramble, but the views are worth it!",
+    permit: "Self-permit",
+    distanceFromSeattle: 70, // miles
+    coverPhotos: ["/images/hikes/chiwawa3.jpg"],
+    photos: ["/images/hikes/chiwawa1.jpg", "/images/hikes/chiwawa2.jpg", "/images/hikes/chiwawa4.jpg", "/images/hikes/chiwawa3.jpg"],
+    youtubeVideo: "https://www.youtube.com/embed/xEGzUOrT_pA?si=LoZBDou1gxK7HuvW",
   }
   // {
   //   id: ,
