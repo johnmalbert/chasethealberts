@@ -364,6 +364,19 @@ export const hikes = [
     coverPhotos: ["/images/hikes/chiwawa3.jpg"],
     photos: ["/images/hikes/chiwawa1.jpg", "/images/hikes/chiwawa2.jpg", "/images/hikes/chiwawa4.jpg", "/images/hikes/chiwawa3.jpg"],
     youtubeVideo: "https://www.youtube.com/embed/xEGzUOrT_pA?si=LoZBDou1gxK7HuvW",
+  },
+  {
+    id: 29,
+    name: "Camp Muir",
+    wildernessArea: "Mount Rainier National Park",
+    length: 10, // miles
+    dogsAllowed: true,
+    highlights: "A long day hike that can be done year round, but be prepared for snow and ice",
+    permit: "Self-permit",
+    distanceFromSeattle: 100, // miles
+    coverPhotos: ["/images/hikes/muir1.jpg"],
+    photos: ["/images/hikes/muir2.jpg", "/images/hikes/muir3.jpg", "/images/hikes/muir4.jpg"],
+    youtubeVideo: "https://www.youtube.com/embed/JUtlsWETtGA?si=S9ynoSm9fvhDuFKu",
   }
   // {
   //   id: ,
