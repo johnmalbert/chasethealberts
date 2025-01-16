@@ -48,12 +48,12 @@ const Home = () => {
           <img src="/images/sahale.jpg" alt="Sahale" className="dog-image" />
           <p>
             <div className="centered-intro">
-              <b><i>We are Chase the Alberts - John, Erin and Sahale.</i></b>
+              <b><i>We are @chasethealberts - John, Erin and Sahale.</i></b>
             </div>
     
             Every chance that we get, we are creating memories together and capturing images along the way, 
             even if that means hauling a 3 lb telephoto lens up a Washington volcano. 
-            We live in Renton, Washington, and work a desk job Monday to Friday, and keep our bags packed for the weekends.
+            We live in Renton, Washington and work a desk job Monday to Friday, but keep our bags packed for the weekends.
             <br />
             <br />
             Here you can find some of our favorite shots, a little more about us, find your next hike, and a few other things. 

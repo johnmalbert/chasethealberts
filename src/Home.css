@@ -36,9 +36,15 @@ body {
     margin: 10px 0 0 0;
 }
 
-/* Featured Photos */
+.featured-photos img {
+    height: auto;
+    margin: 0 auto; 
+    display: block; 
+}
+
 .featured-photos {
-    margin: 20px 0;
+    margin: 20px 0; /* Adjust as necessary */
+    padding: 10px; /* Add padding to improve spacing */
     text-align: center;
 }
 
