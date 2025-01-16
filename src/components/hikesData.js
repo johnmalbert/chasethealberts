@@ -319,7 +319,7 @@ export const hikes = [
     wildernessArea: "Sawtooth Wilderness",
     length: 8, // miles
     dogsAllowed: true,
-    highlights: "Good luck finding this one!",
+    highlights: "The Sawtooth Wilderness in Idaho is a must-visit. Unlike forested mountains in the North Cascades, experience expansive views right out of the car.",
     permit: "None",
     distanceFromSeattle: 400, // miles
     coverPhotos: ["/images/hikes/sawtooths1.jpg"],
@@ -332,7 +332,7 @@ export const hikes = [
     wildernessArea: "Grand Canyon National Park",
     length: 19, // miles
     dogsAllowed: false,
-    highlights: "Good luck finding this one!",
+    highlights: "Experience the Grand Canyon from both the rim and the river in one day. This is a bucket list hike!",
     permit: "None",
     distanceFromSeattle: 1200, // miles
     coverPhotos: ["/images/hikes/grandcanyon1.jpg"],
