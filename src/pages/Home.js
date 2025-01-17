@@ -22,8 +22,12 @@ const originalPhotos = [
   { src: '/images/photo15.jpg', subtitle: 'Passing the Volcano on Baker' },
   { src: '/images/photo16.jpg', subtitle: 'Location kept a secret' },
   { src: '/images/photo17.jpg', subtitle: 'Beautiful Kyoto at night' },
-  { src: '/images/photo18.jpg', subtitle: 'Cooling off in the North Cascades' },
-  { src: '/images/photo19.jpg', subtitle: 'Perfection in the North Cascades' }
+  { src: '/images/photo18.jpg', subtitle: 'Wild Sky Wilderness' },
+  { src: '/images/photo19.jpg', subtitle: 'Perfection in the North Cascades' },
+  { src: '/images/photo20.jpg', subtitle: 'Another perfect sunset spot' },
+  { src: '/images/photo21.jpg', subtitle: 'Sahale as a puppy' },
+  { src: '/images/photo23.jpg', subtitle: 'Larches near Grasshopper Pass' },
+  { src: '/images/photo24.jpg', subtitle: 'Camping at Sahale Arm' },
 ];
 
 const Home = () => {

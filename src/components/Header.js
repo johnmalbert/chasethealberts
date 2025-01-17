@@ -30,6 +30,7 @@ const Header = () => {
           <li><Link to="/take-a-hike">Take a Hike</Link></li>
           <li><Link to="/our-dogs">Our Dogs</Link></li>
           <li><Link to="/japan">Japan</Link></li>
+          <li><Link to="/parks-passport">Parks Passport</Link></li>
         </ul>
       </nav>
 
