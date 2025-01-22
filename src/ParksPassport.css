@@ -5,6 +5,12 @@
 
 .passport {
     margin-bottom: 20px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    padding: 10px;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .passport-list {
@@ -32,14 +38,23 @@
 }
 
 .park-card {
+    width: 250px; /* Set a fixed width */
+    height: 350px; /* Set a fixed height for uniformity */
     margin: 10px;
+    padding: 15px;
     cursor: pointer;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Card effect */
+    border-radius: 10px; /* Rounded corners */
 }
 
 .park-card img {
-    width: 200px;
-    height: 200px;
+    width: 100%; /* Ensure the image fills the card width */
+    height: 200px; /* Set a fixed height */
     object-fit: cover;
     border-radius: 10px;
 }
@@ -49,6 +64,10 @@
     font-size: 1.2rem;
     font-weight: bold;
     color: #333;
+    word-wrap: break-word; /* Ensure long names wrap */
+    white-space: nowrap; /* Prevent text from overflowing */
+    overflow: hidden; /* Hide the overflow */
+    text-overflow: ellipsis; /* Add ellipsis for long text */
 }
 
 .visit-button {
@@ -64,4 +83,13 @@
 
 .visit-button.visited {
     background-color: green;
+}
+
+.clickable-header {
+    cursor: pointer;
+}
+
+.clickable-header:hover {
+    color: #0078d4;
+    /* Optional: Change color on hover */
 }

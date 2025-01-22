@@ -73,6 +73,7 @@ const ParksPassport = () => {
   const [passport, setPassport] = useState([]);
   const [totalParks, setTotalParks] = useState(0);
   const [visitedParks, setVisitedParks] = useState([]);
+  const [showPassport, setShowpassport] = useState(false);
 
   const addToPassport = (park) => {
     if (!passport.includes(park)) {
@@ -90,12 +91,33 @@ const ParksPassport = () => {
     }
   };
 
+  const togglePassportList = () => {
+    setShowpassport(!showPassport);
+  }
+
   return (
     <div className="parks-passport">
+      <div className="lessons-section">
+        <div className="dog-images-container">
+          <img src="/images/sahale.jpg" alt="Sahale" className="dog-image" />
+          <p>
+            <div className="centered-intro">
+              <b><i>We have visited 20 National Parks! </i></b>
+              <br></br>
+              Some of our top five include North Cascades, Glacier, Mount Rainier, Yosemite, and Canyonlands. 
+              <br></br> 
+              Can you match or beat 20 Parks? How many have you visited? 
+            </div>
+          </p>
+          <img src="/images/vesper.jpg" alt="Vesper" className="dog-image" />
+        </div>
+      </div>
       <h1>Parks Passport</h1>
+
       <div className="passport">
-        <h2>Your Passport ({totalParks} parks)</h2>
-        <div className="passport-list">
+        <h2 className="clickable-header" onClick={togglePassportList}>Your Passport ({totalParks} parks)</h2>
+        {showPassport && (
+          <div className="passport-list">
           {passport.map((park) => (
             <div key={park.id} className="passport-item">
               <img src={park.image} alt={park.name} />
@@ -103,6 +125,7 @@ const ParksPassport = () => {
             </div>
           ))}
         </div>
+        )}
       </div>
       <div className="parks-list">
         {parks.map((park) => (
