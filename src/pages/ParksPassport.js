@@ -119,7 +119,8 @@ const ParksPassport = () => {
         <h2 className="clickable-header" onClick={togglePassportList}>
           Your Passport ({totalParks} parks)
         </h2>
-        <h5 className="clickable-header" onClick={togglePassportList}>Click to view your passport</h5>
+        {!showPassport && (<h5 className="clickable-header" onClick={togglePassportList}>Click to view your passport</h5>)}
+        {showPassport && (<h5 className="clickable-header" onClick={togglePassportList}>Click to hide</h5>)}
         {showPassport && (
           <div className="passport-list">
             {passport.map((park) => (
