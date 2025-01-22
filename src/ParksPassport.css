@@ -38,8 +38,10 @@
 }
 
 .park-card {
-    width: 250px; /* Set a fixed width */
-    height: 350px; /* Set a fixed height for uniformity */
+    width: 250px;
+    /* Set a fixed width */
+    height: 350px;
+    /* Set a fixed height for uniformity */
     margin: 10px;
     padding: 15px;
     cursor: pointer;
@@ -48,13 +50,17 @@
     flex-direction: column;
     justify-content: space-between;
     background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Card effect */
-    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Card effect */
+    border-radius: 10px;
+    /* Rounded corners */
 }
 
 .park-card img {
-    width: 100%; /* Ensure the image fills the card width */
-    height: 200px; /* Set a fixed height */
+    width: 100%;
+    /* Ensure the image fills the card width */
+    height: 200px;
+    /* Set a fixed height */
     object-fit: cover;
     border-radius: 10px;
 }
@@ -64,10 +70,14 @@
     font-size: 1.2rem;
     font-weight: bold;
     color: #333;
-    word-wrap: break-word; /* Ensure long names wrap */
-    white-space: nowrap; /* Prevent text from overflowing */
-    overflow: hidden; /* Hide the overflow */
-    text-overflow: ellipsis; /* Add ellipsis for long text */
+    word-wrap: break-word;
+    /* Ensure long names wrap */
+    white-space: nowrap;
+    /* Prevent text from overflowing */
+    overflow: hidden;
+    /* Hide the overflow */
+    text-overflow: ellipsis;
+    /* Add ellipsis for long text */
 }
 
 .visit-button {
@@ -92,4 +102,46 @@
 .clickable-header:hover {
     color: #0078d4;
     /* Optional: Change color on hover */
+}
+
+/* Search Bar Styling */
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    /* Add some space around the search bar */
+}
+
+.search-bar input {
+    width: 80%;
+    /* Set width of the input */
+    max-width: 500px;
+    /* Limit the maximum width */
+    padding: 10px 15px;
+    /* Add padding for a better look */
+    font-size: 16px;
+    /* Set a suitable font size */
+    border: 2px solid #2e8b57;
+    /* Border color to match the theme */
+    border-radius: 5px;
+    /* Rounded corners */
+    outline: none;
+    /* Remove default outline */
+    transition: all 0.3s ease;
+    /* Smooth transitions for hover/focus */
+}
+
+/* Hover and focus effects */
+.search-bar input:hover,
+.search-bar input:focus {
+    border-color: #1c5f3b;
+    /* Darken the border color on hover/focus */
+    box-shadow: 0px 0px 8px rgba(46, 139, 87, 0.5);
+    /* Add shadow on focus */
+}
+
+/* Search bar placeholder text styling */
+.search-bar input::placeholder {
+    color: #a9a9a9;
+    /* Lighter gray for the placeholder */
 }

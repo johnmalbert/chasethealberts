@@ -1,4 +1,3 @@
-// src/pages/ParksPassport.js
 import React, { useState } from "react";
 import "../ParksPassport.css"; // Import the CSS file for styling
 
@@ -8,11 +7,7 @@ const parks = [
   { id: 4, name: "Badlands", image: "/images/parks/badl.png" },
   { id: 5, name: "Big Bend", image: "/images/parks/bibe.png" },
   { id: 6, name: "Biscayne", image: "/images/parks/bisc.png" },
-  {
-    id: 7,
-    name: "Black Canyon of the Gunnison",
-    image: "/images/parks/blca.png",
-  },
+  { id: 7, name: "Black Canyon of the Gunnison", image: "/images/parks/blca.png" },
   { id: 8, name: "Bryce Canyon", image: "/images/parks/brca.png" },
   { id: 9, name: "Canyonlands", image: "/images/parks/cany.png" },
   { id: 10, name: "Capitol Reef", image: "/images/parks/care.png" },
@@ -74,6 +69,7 @@ const ParksPassport = () => {
   const [totalParks, setTotalParks] = useState(0);
   const [visitedParks, setVisitedParks] = useState([]);
   const [showPassport, setShowpassport] = useState(false);
+  const [searchTerm, setSearchTerm] = useState(""); // State for search term
 
   const addToPassport = (park) => {
     if (!passport.includes(park)) {
@@ -93,7 +89,12 @@ const ParksPassport = () => {
 
   const togglePassportList = () => {
     setShowpassport(!showPassport);
-  }
+  };
+
+  // Filter parks based on search term
+  const filteredParks = parks.filter((park) =>
+    park.name.toLowerCase().includes(searchTerm.toLowerCase())
+  );
 
   return (
     <div className="parks-passport">
@@ -104,9 +105,9 @@ const ParksPassport = () => {
             <div className="centered-intro">
               <b><i>We have visited 20 National Parks! </i></b>
               <br></br>
-              Some of our top five include North Cascades, Glacier, Mount Rainier, Yosemite, and Canyonlands. 
-              <br></br> 
-              Can you match or beat 20 Parks? How many have you visited? 
+              Some of our top five include North Cascades, Glacier, Mount Rainier, Yosemite, and Canyonlands.
+              <br></br>
+              Can you match or beat 20 Parks? How many have you visited?
             </div>
           </p>
           <img src="/images/vesper.jpg" alt="Vesper" className="dog-image" />
@@ -115,40 +116,59 @@ const ParksPassport = () => {
       <h1>Parks Passport</h1>
 
       <div className="passport">
-        <h2 className="clickable-header" onClick={togglePassportList}>Your Passport ({totalParks} parks)</h2>
+        <h2 className="clickable-header" onClick={togglePassportList}>
+          Your Passport ({totalParks} parks)
+        </h2>
+        <h5 className="clickable-header" onClick={togglePassportList}>Click to view your passport</h5>
         {showPassport && (
           <div className="passport-list">
-          {passport.map((park) => (
-            <div key={park.id} className="passport-item">
-              <img src={park.image} alt={park.name} />
-              <p className="park-name">{park.name}</p>
-            </div>
-          ))}
-        </div>
+            {passport.map((park) => (
+              <div key={park.id} className="passport-item">
+                <img src={park.image} alt={park.name} />
+                <p className="park-name">{park.name}</p>
+              </div>
+            ))}
+          </div>
         )}
       </div>
+
+      {/* Search Bar */}
+      <div className="search-bar">
+        <input
+          type="text"
+          placeholder="Search for a park..."
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)} // Update search term as the user types
+        />
+      </div>
+
+      {/* Filtered Parks List */}
       <div className="parks-list">
-        {parks.map((park) => (
-          <div
-            key={park.id}
-            className="park-card"
-            onClick={() => addToPassport(park)}
-          >
-            <img src={park.image} alt={park.name} />
-            <p className="park-name">{park.name}</p>
-            <button
-              className={`visit-button ${
-                visitedParks.includes(park.id) ? "visited" : ""
-              }`}
-              onClick={(e) => {
-                e.stopPropagation();
-                markAsVisited(park);
-              }}
+        {filteredParks.length > 0 ? (
+          filteredParks.map((park) => (
+            <div
+              key={park.id}
+              className="park-card"
+              onClick={() => addToPassport(park)}
             >
-              {visitedParks.includes(park.id) ? "Visited" : "Mark as visited!"}
-            </button>
-          </div>
-        ))}
+              <img src={park.image} alt={park.name} />
+              <p className="park-name">{park.name}</p>
+              <button
+                className={`visit-button ${
+                  visitedParks.includes(park.id) ? "visited" : ""
+                }`}
+                onClick={(e) => {
+                  e.stopPropagation();
+                  markAsVisited(park);
+                }}
+              >
+                {visitedParks.includes(park.id) ? "Visited" : "Mark as visited!"}
+              </button>
+            </div>
+          ))
+        ) : (
+          <p>No parks match your search.</p> // Message if no parks match the search
+        )}
       </div>
     </div>
   );
