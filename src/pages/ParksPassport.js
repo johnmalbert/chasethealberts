@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../ParksPassport.css"; // Import the CSS file for styling
+import appInsights from '../appInsights'; // Adjust the path if necessary
 
 const parks = [
   { id: 1, name: "Acadia", image: "/images/parks/acad.png" },
@@ -76,6 +77,8 @@ const ParksPassport = () => {
       setPassport([...passport, park]);
       setTotalParks(totalParks + 1);
       setVisitedParks([...visitedParks, park.id]);
+      appInsights.trackEvent({ name: 'addToPassport' }, { parkName: park.name });
+      console.log('Added to passport:', park.name);
     }
   };
 
