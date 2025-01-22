@@ -108,7 +108,7 @@ const ParksPassport = () => {
             <div className="centered-intro">
               <b><i>We have visited 20 National Parks! </i></b>
               <br></br>
-              Some of our top five include North Cascades, Glacier, Mount Rainier, Yosemite, and Canyonlands.
+              Our top five include North Cascades, Glacier, Mount Rainier, Yosemite, and Canyonlands.
               <br></br>
               Can you match or beat 20 Parks? How many have you visited?
             </div>
