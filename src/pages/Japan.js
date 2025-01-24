@@ -6,21 +6,21 @@ import '../Home.css'; // Reuse the same styles as the home page
 
 // Define the photos for the Japan page with their subtitles
 const japanPhotos = [
-  { src: '/images/japan/photo1.jpg', subtitle: 'Mount Fuji at Sunrise' },
-  { src: '/images/japan/photo2.jpg', subtitle: 'Kyoto Bamboo Forest' },
-  { src: '/images/japan/photo3.jpg', subtitle: 'Cherry Blossoms in Tokyo' },
-  { src: '/images/japan/photo4.jpg', subtitle: 'Historic Castle in Osaka' },
-  { src: '/images/japan/photo5.jpg', subtitle: 'Shinto Shrine in Nara' },
-  { src: '/images/japan/photo6.jpg', subtitle: 'Fushimi Inari Taisha' },
-  { src: '/images/japan/photo7.jpg', subtitle: 'Winter in Sapporo' },
-  { src: '/images/japan/photo8.jpg', subtitle: 'Lake Ashi and Torii Gate' },
-  { src: '/images/japan/photo9.jpg', subtitle: 'Shibuya Crossing at Night' },
-  { src: '/images/japan/photo10.jpg', subtitle: 'Kinkaku-ji (Golden Pavilion)' },
-  { src: '/images/japan/photo11.jpg', subtitle: 'Kinkaku-ji (Golden Pavilion)' },
-  { src: '/images/japan/photo12.jpg', subtitle: 'Kinkaku-ji (Golden Pavilion)' },
-  { src: '/images/japan/photo13.jpg', subtitle: 'Kinkaku-ji (Golden Pavilion)' },
-  { src: '/images/japan/photo14.jpg', subtitle: 'Kinkaku-ji (Golden Pavilion)' },
-  { src: '/images/japan/photo15.jpg', subtitle: 'Kinkaku-ji (Golden Pavilion)' }
+  { src: '/images/japan/photo1.jpg', subtitle: 'Sights from Kumano Kodo Pilgramage' },
+  { src: '/images/japan/photo2.jpg', subtitle: 'Shibuya Square' },
+  { src: '/images/japan/photo3.jpg', subtitle: 'Overlooking Miyajima' },
+  { src: '/images/japan/photo4.jpg', subtitle: 'Bamboo Forest in Kyoto' },
+  { src: '/images/japan/photo5.jpg', subtitle: 'Nara Temple' },
+  { src: '/images/japan/photo6.jpg', subtitle: 'Our mountain hut, Yarigatake' },
+  { src: '/images/japan/photo7.jpg', subtitle: 'View from Yarigatake' },
+  { src: '/images/japan/photo8.jpg', subtitle: 'Yarigatake Summit' },
+  { src: '/images/japan/photo9.jpg', subtitle: 'Bear bell along the Kamikochi trails' },
+  { src: '/images/japan/photo10.jpg', subtitle: 'Filling up on the way to Yarigatake' },
+  { src: '/images/japan/photo11.jpg', subtitle: 'No caption needed' },
+  { src: '/images/japan/photo12.jpg', subtitle: 'Kapabashi Bridge' },
+  { src: '/images/japan/photo13.jpg', subtitle: 'Looking up into the Northern Japanese Alps' },
+  { src: '/images/japan/photo14.jpg', subtitle: 'Views along the Azusa River' },
+  { src: '/images/japan/photo15.jpg', subtitle: 'Floating Torii Gate' }
 ];
 
 const Japan = () => {
