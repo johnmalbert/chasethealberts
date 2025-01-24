@@ -1,0 +1,17 @@
+{
+  "scriptFile": "./index.js", 
+  "bindings": [
+    {
+      "authLevel": "function", 
+      "type": "http",
+      "direction": "in", 
+      "name": "req", 
+      "route": "helloWorld" 
+    },
+    {
+      "type": "http",
+      "direction": "out", 
+      "name": "res" 
+    }
+  ]
+}
