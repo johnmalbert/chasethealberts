@@ -377,7 +377,20 @@ export const hikes = [
     coverPhotos: ["/images/hikes/muir1.jpg"],
     photos: ["/images/hikes/muir2.jpg", "/images/hikes/muir3.jpg", "/images/hikes/muir4.jpg"],
     youtubeVideo: "https://www.youtube.com/embed/JUtlsWETtGA?si=S9ynoSm9fvhDuFKu",
-  }
+  },
+  {
+    id: 30,
+    name: "Big Craggy Peak",
+    wildernessArea: "Methow/Sawtooth",
+    length: 8, // miles
+    dogsAllowed: true,
+    highlights: "Looking for a Bulger List peak? Big Craggy is a great one to start with, only a Class 2 scramble",
+    permit: "None",
+    distanceFromSeattle: 150, // miles
+    coverPhotos: ["/images/hikes/craggy1.jpg"],
+    photos: ["/images/hikes/craggy2.jpg", "/images/hikes/craggy3.jpg"],
+    youtubeVideo: "https://www.youtube.com/embed/4HlbE-ZNgiA?si=rioGCm1Og0Xyh_FN",
+  },
   // {
   //   id: ,
   //   name: "",
