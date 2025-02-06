@@ -380,16 +380,16 @@ export const hikes = [
   },
   {
     id: 30,
-    name: "Big Craggy Peak",
-    wildernessArea: "Methow/Sawtooth",
-    length: 8, // miles
+    name: "Tuck and Robin Lakes",
+    wildernessArea: "Alpine Lakes Wilderness",
+    length: 14, // miles
     dogsAllowed: true,
-    highlights: "Looking for a Bulger List peak? Big Craggy is a great one to start with, only a Class 2 scramble",
-    permit: "None",
-    distanceFromSeattle: 150, // miles
-    coverPhotos: ["/images/hikes/craggy1.jpg"],
-    photos: ["/images/hikes/craggy2.jpg", "/images/hikes/craggy3.jpg"],
-    youtubeVideo: "https://www.youtube.com/embed/4HlbE-ZNgiA?si=rioGCm1Og0Xyh_FN",
+    highlights: "This is one of Washington's most popular hikes, and for good reason. The lakes are stunning!",
+    permit: "Self-permit",
+    distanceFromSeattle: 100, // miles
+    coverPhotos: ["/images/hikes/tuck1.jpg"],
+    photos: ["/images/hikes/tuck2.jpg", "/images/hikes/tuck3.jpg"],
+    youtubeVideo: "https://www.youtube.com/embed/sBT-Un_1nFA?si=0QBca5sO1uQDinaG",
   },
   // {
   //   id: ,
