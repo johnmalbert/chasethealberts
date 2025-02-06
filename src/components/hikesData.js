@@ -13,6 +13,7 @@ export const hikes = [
     coverPhotos: ["/images/hikes/daniel3.jpg"],
     photos: ["/images/hikes/daniel4.jpg", "images/hikes/daniel3.jpg", "images/hikes/daniel2.jpg", "images/hikes/daniel1.jpg"],
     youtubeVideo: "https://www.youtube.com/embed/C3Y3m85lJ3k?si=ukDIFoH3W_3lHwAk",
+    allTrails: "https://www.alltrails.com/widget/trail/us/washington/mount-daniel-and-peggys-pond-via-cathedral-pass-trail?u=i&sh=ud7hlu"
   },
   {
     id: 2,
@@ -26,6 +27,7 @@ export const hikes = [
     coverPhotos: ["/images/hikes/baker3.jpg"],
     photos: ["/images/hikes/baker1.jpg", "images/hikes/baker2.jpg", "images/hikes/baker3.jpg", "images/hikes/baker4.jpg", "images/hikes/baker5.jpg", "images/hikes/baker6.jpg"],
     youtubeVideo: "https://www.youtube.com/embed/tN_t_plahUs?si=WKmjcE1GonhS7FdY",
+    allTrails: "https://www.alltrails.com/widget/trail/us/washington/mount-baker-via-easton-glacier?u=i&sh=ud7hlu"
   },
   {
     id: 3,
@@ -39,12 +41,13 @@ export const hikes = [
     coverPhotos: ["/images/glacier3.jpg"],
     photos: ["/images/hikes/glacierpeak1.jpg", "/images/hikes/glacierpeak2.jpg", "/images/hikes/glacierpeak3.jpg", "/images/hikes/glacierpeak4.jpg","/images/hikes/glacierpeak5.jpg"],
     youtubeVideo: "https://www.youtube.com/embed/RL_lw9CEsFQ?si=nEf6xDJ2qmnxr2P8",
+    allTrails: "https://www.alltrails.com/widget/trail/us/washington/glacier-peak--4?u=i&sh=ud7hlu"
   },
   {
     id: 4,
     name: "Chelan Lakeshore Trail",
     wildernessArea: "Entiat Mountains",
-    length: 20, // miles
+    length: 17, // miles
     dogsAllowed: true,
     highlights: "Take a ferry to hike along this remote lakeshore",
     permit: "Ferry Reservation",
@@ -52,6 +55,7 @@ export const hikes = [
     coverPhotos: ["/images/hikes/chelanlakeshore1.jpg"],
     photos: ["/images/hikes/chelanlakeshore1.jpg","/images/hikes/chelanlakeshore3.jpg","/images/hikes/chelanlakeshore2.jpg"],
     youtubeVideo: "https://www.youtube.com/embed/W2VVr-54P-U?si=8ScMIWgN9rXjQTzu",
+    allTrails: "https://www.alltrails.com/widget/trail/us/washington/chelan-lakeshore-trail-prince-creek-campground-to-stehekin?u=i&sh=ud7hlu"
   },
   {
     id: 5,
@@ -65,10 +69,11 @@ export const hikes = [
     coverPhotos: ["/images/hikes/goldenears3.jpg"],
     photos: ["/images/hikes/goldenears1.jpg", "/images/hikes/goldenears2.jpg", "/images/hikes/goldenears3.jpg","/images/hikes/goldenears4.jpg", "/images/hikes/goldenears5.jpg","/images/hikes/goldenears6.jpg","/images/hikes/goldenears7.jpg","/images/hikes/goldenears8.jpg"],
     youtubeVideo: "https://www.youtube.com/embed/kjVNye2uVUs?si=W57Ic-5rBwI5_GM8",
+    allTrails: "https://www.alltrails.com/widget/trail/canada/british-columbia/golden-ears-trail?u=i&sh=ud7hlu"
   },
   {
     id: 6,
-    name: "Abernathy Peak",
+    name: "Abernathy Peak, Scatter Lake",
     wildernessArea: "Methow/Sawtooth",
     length: 12, // miles
     dogsAllowed: true,
@@ -78,6 +83,7 @@ export const hikes = [
     coverPhotos: ["/images/hikes/abernathy1.jpg"],
     photos: ["/images/hikes/abernathy1.jpg", "/images/hikes/abernathy2.jpg"],
     youtubeVideo: "https://www.youtube.com/embed/mDMWxQ8SSHc?si=f4N1i347DKnywDhP",
+    allTrails: "https://www.alltrails.com/widget/trail/us/washington/scatter-lake?u=i&sh=ud7hlu"
   },
   {
     id: 7,
@@ -91,12 +97,13 @@ export const hikes = [
     coverPhotos: ["/images/hikes/welcomepass2.jpg"],
     photos: ["/images/hikes/welcomepass1.jpg", "/images/hikes/welcomepass2.jpg", "/images/hikes/welcomepass3.jpg", "/images/hikes/welcomepass4.jpg"],
     youtubeVideo: "https://www.youtube.com/embed/qYvBYYy50e8?si=x1fM3mUWXZBvX2zp",
+    allTrails: "https://www.alltrails.com/widget/trail/us/washington/welcome-pass-via-high-divide-trail?u=i&sh=ud7hlu"
   },
   {
     id: 8,
     name: "Wing Lake, Black Peak",
     wildernessArea: "North Cascades",
-    length: 12, // miles
+    length: 15, // miles
     dogsAllowed: true,
     highlights: "Scramble up this scree covered class three peak, and camp and the gorgeous Wing Lake among the Larches",
     permit: "None",
@@ -104,6 +111,7 @@ export const hikes = [
     coverPhotos: ["/images/hikes/winglake5.jpg"],
     photos: ["/images/hikes/winglake1.jpg", "/images/hikes/winglake2.jpg", "/images/hikes/winglake3.jpg", "/images/hikes/winglake4.jpg"],
     youtubeVideo: "https://www.youtube.com/embed/h0_UPXHUEXE?si=PW5EzfHlYowTZkLZ",
+    allTrails: "https://www.alltrails.com/widget/trail/us/washington/maple-pass-to-wing-lake-and-black-peak?u=i&sh=ud7hlu"
   },
   {
     id: 9,

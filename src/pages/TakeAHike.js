@@ -152,6 +152,16 @@ const TakeAHike = () => {
               ></iframe>
             )}
           </section>
+            {selectedHike.allTrails && (
+              <iframe class="alltrails" src={selectedHike.allTrails} 
+              width="100%" 
+              height="120%" 
+              frameborder="0" scrolling="no" 
+              marginheight="0" 
+              marginwidth="0" 
+              title="AllTrails: Trail Guides and Maps for Hiking, Camping, and Running">
+              </iframe>
+            )}
           </div>
         </div>
       )}
