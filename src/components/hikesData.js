@@ -125,6 +125,7 @@ export const hikes = [
     coverPhotos: ["/images/hikes/yellowaster1.jpg"],
     photos: ["/images/hikes/yellowaster2.jpg", "/images/hikes/yellowaster3.jpg"],
     youtubeVideo: "https://www.youtube.com/embed/qYvBYYy50e8?si=x1fM3mUWXZBvX2zp",
+    allTrails: "https://www.alltrails.com/widget/trail/us/washington/yellow-aster-butte-trail?u=i&sh=ud7hlu"
   },
   {
     id: 10,
@@ -138,6 +139,7 @@ export const hikes = [
     coverPhotos: ["/images/hikes/edna1.jpg"],
     photos: ["/images/hikes/edna2.jpg", "/images/hikes/edna3.jpg"],
     youtubeVideo: "",
+    allTrails: "https://www.alltrails.com/widget/trail/us/washington//washington/lake-edna-trail?u=i&sh=ud7hlu"
   },
   {
     id: 11,
@@ -151,6 +153,7 @@ export const hikes = [
     coverPhotos: ["/images/hikes/beanpeak5.jpg"],
     photos: ["/images/hikes/beanpeak1.jpg", "/images/hikes/beanpeak3.jpg", "/images/hikes/beanpeak2.jpg", "/images/hikes/beanpeak4.jpg"],
     youtubeVideo: "https://www.youtube.com/embed/pO6FdPXZls8?si=VbuFjdJz2iWX8yGk",
+    allTrails: "https://www.alltrails.com/widget/widget/trail/us/washington/bean-creek-basin?u=i&sh=ud7hlu"
   },
   {
     id: 12,
@@ -164,6 +167,7 @@ export const hikes = [
     coverPhotos: ["/images/hikes/eaglelakes2.jpg"],
     photos: ["/images/hikes/eaglelakes3.jpg", "/images/hikes/eaglelakes4.jpg", "/images/hikes/eaglelakes5.jpg"],
     youtubeVideo: "https://www.youtube.com/embed/4Ew9Fie_Dks?si=DDsloIXUEM1W1aar",
+    allTrails: "https://www.alltrails.com/widget/trail/us/washington/eagle-lakes-trail--2?u=i&sh=ud7hlu"
   },
   {
     id: 16,
@@ -190,6 +194,7 @@ export const hikes = [
     coverPhotos: ["/images/hikes/barclay1.jpg"],
     photos: ["/images/hikes/barclay2.jpg", "/images/hikes/barclay3.jpg", "/images/hikes/barclay4.jpg"],
     youtubeVideo: "https://www.youtube.com/embed/giCEsdDNZj0?si=Eayb6DBGRU5DtTbQ",
+    allTrails: "https://www.alltrails.com/widget/trail/us/washington/barclay-lake-trail?u=i&sh=ud7hlu"
   },
   {
     id: 13,
@@ -216,6 +221,7 @@ export const hikes = [
     coverPhotos: ["/images/hikes/cutthroat1.jpg"],
     photos: ["/images/hikes/cutthroat2.jpg", "/images/hikes/cutthroat3.jpg", "/images/hikes/cutthroat4.jpg"],
     youtubeVideo: "https://www.youtube.com/embed/7s5W8BCihMw?si=yFa784hlnf1BEXB8",
+    allTrails: "https://www.alltrails.com/widget/trail/us/washington/cutthroat-pass-via-the-pct?u=i&sh=ud7hlu"
   },
   {
     id: 15,
@@ -229,6 +235,7 @@ export const hikes = [
     coverPhotos: ["/images/hikes/enchantments1.jpg"],
     photos: ["/images/hikes/enchantments2.jpg", "/images/hikes/enchantments3.jpg", "/images/hikes/enchantments4.jpg", "/images/hikes/enchantments5.jpg"],
     youtubeVideo: "https://www.youtube.com/embed/gUbGl3ILEJ0?si=1mH8-QRUdr7on5S5",
+    allTrails: "https://www.alltrails.com/widget/trail/us/washington/the-enchantments-trail?u=i&sh=ud7hlu"
   },
   {
     id: 18,
@@ -242,6 +249,7 @@ export const hikes = [
     coverPhotos: ["/images/hikes/helens1.jpg"],
     photos: ["/images/hikes/helens2.jpg", "/images/hikes/helens3.jpg", "/images/hikes/helens4.jpg", "/images/hikes/helens5.jpg", "/images/hikes/helens6.jpg"],
     youtubeVideo: "https://www.youtube.com/embed/lSVY447Dgyk?si=k9YK5W9mBbcsAPYy",
+    allTrails: "https://www.alltrails.com/widget/trail/us/washington/mount-saint-helens-via-worm-flows-trail?u=i&sh=ud7hlu"
   },
   {
     id: 19,
@@ -255,6 +263,7 @@ export const hikes = [
     coverPhotos: ["/images/hikes/goatrocks2.jpg"],
     photos: ["/images/hikes/goatrocks1.jpg", "/images/hikes/goatrocks3.jpg", "/images/hikes/goatrocks4.jpg", "/images/hikes/goatrocks5.jpg"],
     youtubeVideo: "",
+    allTrails: "https://www.alltrails.com/widget/trail/us/washington/old-snowy-mountain-via-snowgrass-trail?u=i&sh=ud7hlu"
   },
   {
     id: 20,
@@ -268,6 +277,7 @@ export const hikes = [
     coverPhotos: ["/images/hikes/highrock1.jpg"],
     photos: ["/images/hikes/highrock2.jpg", "/images/hikes/highrock3.jpg", "/images/hikes/highrock4.jpg", "/images/hikes/highrock5.jpg"],
     youtubeVideo: "",
+    allTrails: "https://www.alltrails.com/widget/trail/us/washington/old-snowy-mountain-via-snowgrass-trail?u=i&sh=ud7hlu"
   },
   {
     id: 21,
@@ -281,6 +291,7 @@ export const hikes = [
     coverPhotos: ["/images/hikes/kelly1.jpg"],
     photos: ["/images/hikes/kelly2.jpg", "/images/hikes/kelly3.jpg", "/images/hikes/kelly4.jpg", "/images/hikes/kelly5.jpg"],
     youtubeVideo: "",
+    allTrails: "https://www.alltrails.com/widget/trail/us/washington/kelly-butte-trail-1031?u=i&sh=ud7hlu"
   },
   {
     id: 22,
@@ -294,6 +305,7 @@ export const hikes = [
     coverPhotos: ["/images/hikes/lyman1.jpg"],
     photos: ["/images/hikes/lyman2.jpg", "/images/hikes/lyman3.jpg", "/images/hikes/lyman4.jpg"],
     youtubeVideo: "https://www.youtube.com/embed/5VBIEcwxFn8?si=iW51SObAG3ShqXV1",
+    allTrails: "https://www.alltrails.com/widget/trail/us/washington/phelps-creek-trail-to-lyman-lake?u=i&sh=ud7hlu"
   },
   {
     id: 23,
@@ -307,6 +319,7 @@ export const hikes = [
     coverPhotos: ["/images/hikes/navaho4.jpg"],
     photos: ["/images/hikes/navaho2.jpg", "/images/hikes/navaho3.jpg", "/images/hikes/navaho1.jpg"],
     youtubeVideo: "https://www.youtube.com/embed/bet9iFIxsfA?si=WM2g8EWlT4D33n31",
+    allTrails: "https://www.alltrails.com/widget/trail/us/washington/navaho-peak?u=i&sh=ud7hlu"
   },
   {
     id: 24,
@@ -333,6 +346,7 @@ export const hikes = [
     coverPhotos: ["/images/hikes/sawtooths1.jpg"],
     photos: ["/images/hikes/sawtooths2.jpg", "/images/hikes/sawtooths3.jpg", "/images/hikes/sawtooths4.jpg"],
     youtubeVideo: "https://www.youtube.com/embed/YBhdPGa0M80?si=JW32lNDDSmRY81bI",
+    allTrails: "https://www.alltrails.com/widget/trail/us/idaho/tin-cup-hiker?u=i&sh=ud7hlu"
   },
   {
     id: 26,
@@ -346,6 +360,7 @@ export const hikes = [
     coverPhotos: ["/images/hikes/grandcanyon1.jpg"],
     photos: ["/images/hikes/grandcanyon2.jpg", "/images/hikes/grandcanyon3.jpg", "/images/hikes/grandcanyon4.jpg", "/images/hikes/grandcanyon5.jpg"],
     youtubeVideo: "https://www.youtube.com/embed/9YppPsLbJms?si=HHNlKnqkfmh9qZBl",
+    allTrails: "https://www.alltrails.com/widget/trail/us/arizona/south-kaibab-to-north-kaibab-to-bright-angel-trail?u=i&sh=ud7hlu"
   },
   {
     id: 27,
@@ -359,6 +374,7 @@ export const hikes = [
     coverPhotos: ["/images/hikes/glacier10.jpg"],
     photos: ["/images/hikes/glacier20.jpg", "/images/hikes/glacier30.jpg"],
     youtubeVideo: "https://www.youtube.com/embed/U0C6nXE8-zI?si=ox575iIu8yRYoGfk",
+    allTrails: "https://www.alltrails.com/widget/trail/us/washington/spectacle-lake-via-mineral-creek-trail?u=i&sh=ud7hlu"
   },
   {
     id: 28,
@@ -385,6 +401,7 @@ export const hikes = [
     coverPhotos: ["/images/hikes/muir1.jpg"],
     photos: ["/images/hikes/muir2.jpg", "/images/hikes/muir3.jpg", "/images/hikes/muir4.jpg"],
     youtubeVideo: "https://www.youtube.com/embed/JUtlsWETtGA?si=S9ynoSm9fvhDuFKu",
+    allTrails: "https://www.alltrails.com/widget/trail/us/washington/camp-muir-route-via-skyline-trail?u=i&sh=ud7hlu"
   },
   {
     id: 30,
@@ -398,6 +415,7 @@ export const hikes = [
     coverPhotos: ["/images/hikes/tuck1.jpg"],
     photos: ["/images/hikes/tuck2.jpg", "/images/hikes/tuck3.jpg"],
     youtubeVideo: "https://www.youtube.com/embed/sBT-Un_1nFA?si=0QBca5sO1uQDinaG",
+    allTrails: "https://www.alltrails.com/widget/trail/us/washington/tuck-and-robin-lakes?u=i&sh=ud7hlu"
   },
   // {
   //   id: ,
