@@ -8,12 +8,18 @@ const TakeAHike = () => {
     wildernessArea: "",
   });
   const [selectedHike, setSelectedHike] = useState(null);
+  const [searchTerm, setSearchTerm] = useState(""); // State for search term
+
+  const filteredHikesbySearch = hikes.filter((hike) =>
+    hike.name.toLowerCase().includes(searchTerm.toLowerCase())
+  );
 
   // Reference for the hike details section
   const hikeDetailsRef = useRef(null);
 
   // Filter hikes based on selected filters
-  const filteredHikes = hikes.filter((hike) => {
+  // Filter hikes based on selected filters
+  const filteredHikes = filteredHikesbySearch.filter((hike) => {
     return (
       (selectedFilters.length ? hike.length <= selectedFilters.length : true) &&
       (selectedFilters.wildernessArea
@@ -49,8 +55,20 @@ const TakeAHike = () => {
           </i>
         </b>
       </div>
+
       {/* Filters */}
       <div className="filters">
+        <div className="filter">
+          {/* <div className="search-bar"> */}
+          <label>Hike Name:</label>
+            <input
+              type="text"
+              placeholder="Search for a hike by name..."
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)} 
+            />
+          {/* </div> */}
+        </div>
         <div className="filter">
           <label>Hike Length (miles):</label>
           <input
@@ -94,24 +112,24 @@ const TakeAHike = () => {
       <div className="photo-grid">
         {filteredHikes.map((hike) => (
           <div
-            className={`photo-container ${
-              selectedHike && selectedHike.id === hike.id
-                ? "selected"
-                : "grayscale"
+          className={`photo-container ${
+            selectedHike && selectedHike.id === hike.id
+            ? "selected"
+            : "grayscale"
             }`}
-            key={hike.id}
-            onClick={() => handleHikeClick(hike)}
+          key={hike.id}
+          onClick={() => handleHikeClick(hike)}
           >
-            <img
-              src={hike.coverPhotos[0]}
-              alt={hike.name}
-              className={`hike-photo ${
-                selectedHike && selectedHike.id === hike.id ? "expanded" : ""
-              }`}
-            />
-            <div className="photo-title">{hike.name}</div>
-          </div>
-        ))}
+          <img
+            src={hike.coverPhotos[0]}
+            alt={hike.name}
+            className={`hike-photo ${
+              selectedHike && selectedHike.id === hike.id ? "expanded" : ""
+            }`}
+          />
+          <div className="photo-title">{hike.name}</div>
+        </div>
+      ))}
       </div>
 
       {/* Display Hike Details */}
