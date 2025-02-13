@@ -209,3 +209,9 @@
 .take-a-hike-page .hike-photo-detail {
     max-width: 90%;
 }
+
+.take-a-hike-page map-section {
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+}
