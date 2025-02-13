@@ -155,6 +155,7 @@
     text-align: center; /* Center the first line */
     font-size: 1.2rem;  /* Slightly increase font size for emphasis */
     margin-bottom: 10px; /* Add some space below */
+    margin-top: 20px;
 }
 
 h1 {

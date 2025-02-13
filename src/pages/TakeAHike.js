@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { hikes } from "../components/hikesData"; // Import the hikes data from hikesData.js
 import "../TakeAHike.css"; // Import styles for the page
+import MapPage from "./MapPage";
 
 const TakeAHike = () => {
   const [selectedFilters, setSelectedFilters] = useState({
@@ -17,7 +18,6 @@ const TakeAHike = () => {
   // Reference for the hike details section
   const hikeDetailsRef = useRef(null);
 
-  // Filter hikes based on selected filters
   // Filter hikes based on selected filters
   const filteredHikes = filteredHikesbySearch.filter((hike) => {
     return (
@@ -59,15 +59,13 @@ const TakeAHike = () => {
       {/* Filters */}
       <div className="filters">
         <div className="filter">
-          {/* <div className="search-bar"> */}
           <label>Hike Name:</label>
-            <input
-              type="text"
-              placeholder="Search for a hike by name..."
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)} 
-            />
-          {/* </div> */}
+          <input
+            type="text"
+            placeholder="Search for a hike by name..."
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+          />
         </div>
         <div className="filter">
           <label>Hike Length (miles):</label>
@@ -101,35 +99,43 @@ const TakeAHike = () => {
         </div>
       </div>
 
+      <div className="map-section">
+        <h2>Hike Locations</h2>
+        <MapPage coordinates={filteredHikes.map((hike) => ({
+          id: hike.id,
+          lat: hike.coordinates.split(",")[0],
+          lng: hike.coordinates.split(",")[1],
+          name: hike.name,
+        }))} />
+      </div>
+
       {/* Photo Grid */}
       <div className="centered-intro">
         <b>
-          <i>
-            Select a hike for details
-          </i>
+          <i>Select a hike for details</i>
         </b>
       </div>
       <div className="photo-grid">
         {filteredHikes.map((hike) => (
           <div
-          className={`photo-container ${
-            selectedHike && selectedHike.id === hike.id
-            ? "selected"
-            : "grayscale"
+            className={`photo-container ${
+              selectedHike && selectedHike.id === hike.id
+                ? "selected"
+                : "grayscale"
             }`}
-          key={hike.id}
-          onClick={() => handleHikeClick(hike)}
+            key={hike.id}
+            onClick={() => handleHikeClick(hike)}
           >
-          <img
-            src={hike.coverPhotos[0]}
-            alt={hike.name}
-            className={`hike-photo ${
-              selectedHike && selectedHike.id === hike.id ? "expanded" : ""
-            }`}
-          />
-          <div className="photo-title">{hike.name}</div>
-        </div>
-      ))}
+            <img
+              src={hike.coverPhotos[0]}
+              alt={hike.name}
+              className={`hike-photo ${
+                selectedHike && selectedHike.id === hike.id ? "expanded" : ""
+              }`}
+            />
+            <div className="photo-title">{hike.name}</div>
+          </div>
+        ))}
       </div>
 
       {/* Display Hike Details */}
@@ -146,39 +152,42 @@ const TakeAHike = () => {
               <p><strong>Distance from Seattle:</strong> {selectedHike.distanceFromSeattle} miles</p>
             </div>
 
-          <div className="hike-photos">
-            {selectedHike.photos.map((photo, index) => (
-              <img
-                key={index}
-                src={photo}
-                alt={`Hike ${index}`}
-                className="hike-photo-detail"
-              />
-            ))}
-          </div>
-          <section className="featured-video">
-            {selectedHike.youtubeVideo && (
-              <iframe
-              width="560"
-              height="315"
-              src={selectedHike.youtubeVideo}
-              title="YouTube video player"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerPolicy="strict-origin-when-cross-origin"
-              allowFullScreen
-              ></iframe>
-            )}
-          </section>
+            <div className="hike-photos">
+              {selectedHike.photos.map((photo, index) => (
+                <img
+                  key={index}
+                  src={photo}
+                  alt={`Hike ${index}`}
+                  className="hike-photo-detail"
+                />
+              ))}
+            </div>
+            <section className="featured-video">
+              {selectedHike.youtubeVideo && (
+                <iframe
+                  width="560"
+                  height="315"
+                  src={selectedHike.youtubeVideo}
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                ></iframe>
+              )}
+            </section>
             {selectedHike.allTrails && (
-              <iframe class="alltrails" src={selectedHike.allTrails} 
-              width="100%" 
-              height="120%" 
-              frameborder="0" scrolling="no" 
-              marginheight="0" 
-              marginwidth="0" 
-              title="AllTrails: Trail Guides and Maps for Hiking, Camping, and Running">
-              </iframe>
+              <iframe
+                className="alltrails"
+                src={selectedHike.allTrails}
+                width="100%"
+                height="120%"
+                frameBorder="0"
+                scrolling="no"
+                marginHeight="0"
+                marginWidth="0"
+                title="AllTrails: Trail Guides and Maps for Hiking, Camping, and Running"
+              ></iframe>
             )}
           </div>
         </div>
