@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import PhotoSection from '../components/PhotoSection';
 import useScrollAnimation from '../hooks/useScrollAnimation';
 import '../Home.css'; // Import styles for the page
@@ -63,8 +64,10 @@ const Home = () => {
             Here you can find some of our favorite shots, a little more about us, find your next hike, and a few other things. 
             You can always reach out to us at chasethealberts@gmail.com, or any of the links at the bottom of the page. 
             <br />
-            <br />
-            If you tap each image, you can see the subtitle with details/location!
+            <div className="button-container">
+                <Link to="/take-a-hike" className="styled-button">Take A Hike</Link>
+                <Link to="/parks-passport" className="styled-button">Parks Passport</Link>
+            </div>
           </p>
           <img src="/images/vesper.jpg" alt="Vesper" className="dog-image" />
         </div>
@@ -72,6 +75,7 @@ const Home = () => {
       {/* Featured Photos Section */}
       <section className="featured-photos">
         <h2>Featured Photos</h2>
+        <h5>Tap to see the subtitle with details/location!</h5>
         <PhotoSection photos={featuredPhotos} />
       </section>
 
