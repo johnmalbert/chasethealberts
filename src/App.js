@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header'; 
 import Footer from './components/Footer'; 
 import Home from './pages/Home';
-import Japan from './pages/Japan';
+import Landscapes from './pages/Landscapes';
 import TakeAHike from './pages/TakeAHike';
 import OurDogs from './pages/OurDogs';
 import ParksPassport from './pages/ParksPassport';
@@ -16,7 +16,7 @@ function App() {
         <Header /> {/* Add the Header component here */}
         <Routes> {/* Use Routes instead of Switch */}
           <Route path="/" element={<Home />} />
-          <Route path="/japan" element={<Japan />} />
+          <Route path="/landscapes" element={<Landscapes />} />
           <Route path="/our-dogs" element={<OurDogs />} />
           <Route path="/take-a-hike" element={<TakeAHike />} />
           <Route path="/parks-passport" element={<ParksPassport />} /> {/* Add the new route */}
