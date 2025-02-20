@@ -67,6 +67,7 @@ const Home = () => {
             <div className="button-container">
                 <Link to="/take-a-hike" className="styled-button">Take A Hike</Link>
                 <Link to="/parks-passport" className="styled-button">Parks Passport</Link>
+                <Link to="/landscapes" className="styled-button">Landscapes</Link>
             </div>
           </p>
           <img src="/images/vesper.jpg" alt="Vesper" className="dog-image" />

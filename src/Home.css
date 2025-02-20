@@ -64,6 +64,12 @@ body {
     display: block;
 }
 
+.featured-photos img {
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
 .featured-photos {
     margin: 20px 0;
     /* Adjust as necessary */

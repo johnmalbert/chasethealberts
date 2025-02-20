@@ -1,6 +1,6 @@
 /* Styling for the photo section */
 .photo-section {
-    column-count: 5;
+    column-count: 4;
     column-gap: 10px;
     padding: 5px;
 }

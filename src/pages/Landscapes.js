@@ -3,7 +3,6 @@ import PhotoSection from '../components/PhotoSection';
 import useScrollAnimation from '../hooks/useScrollAnimation';
 import '../Home.css'; // Reuse the same styles as the home page
 
-// Define the photos for the Japan page with their subtitles
 const landscapePhotos = [
   { src: '/images/landscapes/photo1.jpg', subtitle: 'Overlooking the Columbia River Basin' },
   { src: '/images/landscapes/photo2.jpg', subtitle: 'Navaho Peak' },
@@ -35,7 +34,6 @@ const Landscapes = () => {
     <div className="home-container">
       {/* Featured Photos Section */}
       <section className="featured-photos">
-        <h2>Landscapes</h2>
         <PhotoSection photos={landscapePhotos} />
       </section>
 
