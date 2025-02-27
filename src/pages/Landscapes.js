@@ -32,6 +32,11 @@ const Landscapes = () => {
 
   return (
     <div className="home-container">
+      <img
+        src='/images/landscapes/photo16.jpg'
+        alt={`High Camp below Glacier Peak`}
+        className="photo animate-on-scroll"
+      />
       {/* Featured Photos Section */}
       <section className="featured-photos">
         <PhotoSection photos={landscapePhotos} />
