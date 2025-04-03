@@ -448,6 +448,21 @@ export const hikes = [
     allTrails: "https://www.alltrails.com/widget/trail/us/washington/tuck-and-robin-lakes?u=i&sh=ud7hlu",
     coordinates: "47.59338908211972, -121.09580058039253"
   },
+  {
+    id: 31,
+    name: "Ice Lakes",
+    wildernessArea: "Glacier Peak Wilderness",
+    length: 15, // miles
+    dogsAllowed: true,
+    highlights: "If you're looking for a larch march with lakes to camp by, this late-season hike is perfect!",
+    permit: "Self-permit",
+    distanceFromSeattle: 100, // miles
+    coverPhotos: ["/images/hikes/ice3.jpg"],
+    photos: ["/images/hikes/ice1.jpg", "/images/hikes/ice2.jpg"],
+    youtubeVideo: "https://www.youtube.com/embed/B9F0N9k_RPQ?si=weohmFdxm-E6qxGp",
+    allTrails: "https://www.alltrails.com/widget/trail/us/washington/mount-maude-via-phelps-creek-trail?u=i&sh=ud7hlu",
+    coordinates: "48.08323052744559, -120.83454746867723"
+  },
   // {
   //   id: ,
   //   name: "",
