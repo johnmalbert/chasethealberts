@@ -464,7 +464,7 @@ export const hikes = [
     coordinates: "48.08323052744559, -120.83454746867723"
   },
   {
-    id: 31,
+    id: 32,
     name: "Bathtub Lakes",
     wildernessArea: "Mt Pilchuck State Park",
     length: 12, // miles
@@ -477,6 +477,21 @@ export const hikes = [
     youtubeVideo: "https://www.youtube.com/embed/MqzGO8W8rjA?si=rlFNVq_hVrzDZKer",
     allTrails: "https://www.alltrails.com/widget/poi/us/washington/granite-falls/bathtub-lakes?u=i&sh=ud7hlu",
     coordinates: "48.05856,-121.73623"
+  },
+  {
+    id: 33,
+    name: "Lake Ann - Esmerelda Basin",
+    wildernessArea: "Okanogan-Wenatchee National Forest",
+    length: 9, // miles
+    dogsAllowed: true,
+    highlights: "The hike is gradual and straightforward, head up over the pass then down to Lake Ann.",
+    permit: "None",
+    distanceFromSeattle: 115, // miles
+    coverPhotos: ["/images/hikes/ann2.jpg"],
+    photos: ["/images/hikes/ann1.jpg", "/images/hikes/ann2.jpg"],
+    youtubeVideo: "https://www.youtube.com/embed/JXxXnQr0jpY?si=XO2IXTm9gNY51DuA",
+    allTrails: "https://www.alltrails.com/widget/trail/us/washington/lake-ann-via-esmerelda-basin-trail?u=i&sh=ud7hlu",
+    coordinates: "47.43675,-120.93686"
   },
   // {
   //   id: ,
