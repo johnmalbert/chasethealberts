@@ -493,6 +493,21 @@ export const hikes = [
     allTrails: "https://www.alltrails.com/widget/trail/us/washington/lake-ann-via-esmerelda-basin-trail?u=i&sh=ud7hlu",
     coordinates: "47.43675,-120.93686"
   },
+  {
+    id: 34,
+    name: "Surprise Lake, Surprise Mountain",
+    wildernessArea: "Alpine Lakes Wilderness",
+    length: 15, // miles
+    dogsAllowed: true,
+    highlights: "Great fishing, fun scramble route up to a premier view of the Alpine Lakes Wilderness",
+    permit: "None",
+    distanceFromSeattle: 115, // miles
+    coverPhotos: ["/images/hikes/surprise2.jpg"],
+    photos: ["/images/hikes/surprise1.jpg", "/images/hikes/surprise2.jpg", "/images/hikes/surprise3.jpg", "/images/hikes/surprise4.jpg"],
+    youtubeVideo: "https://www.youtube.com/embed/hLnTWQRqfnE?si=x4o1g3WIB6pQ5GeW",
+    allTrails: "https://www.alltrails.com/widget/trail/us/washington/surprise-creek-trail-to-surprise-and-glacier-lakes?u=i&sh=ud7hlu",
+    coordinates: "47.7086,-121.15466"
+  },
   // {
   //   id: ,
   //   name: "",
