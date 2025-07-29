@@ -463,6 +463,21 @@ export const hikes = [
     allTrails: "https://www.alltrails.com/widget/trail/us/washington/mount-maude-via-phelps-creek-trail?u=i&sh=ud7hlu",
     coordinates: "48.08323052744559, -120.83454746867723"
   },
+  {
+    id: 31,
+    name: "Bathtub Lakes",
+    wildernessArea: "Mt Pilchuck State Park",
+    length: 12, // miles
+    dogsAllowed: true,
+    highlights: "The trail ends at Pinnacle Lake, but that doesn't mean the adventure does. Continue up a waterfall into the Bathtub Lakes valley",
+    permit: "None",
+    distanceFromSeattle: 70, // miles
+    coverPhotos: ["/images/hikes/bathtub1.jpg"],
+    photos: ["/images/hikes/bathtub1.jpg", "/images/hikes/bathtub2.jpg", "/images/hikes/bathtub3.jpg", "/images/hikes/bathtub4.jpg"],
+    youtubeVideo: "https://www.youtube.com/embed/MqzGO8W8rjA?si=rlFNVq_hVrzDZKer",
+    allTrails: "https://www.alltrails.com/widget/poi/us/washington/granite-falls/bathtub-lakes?u=i&sh=ud7hlu",
+    coordinates: "48.05856,-121.73623"
+  },
   // {
   //   id: ,
   //   name: "",
