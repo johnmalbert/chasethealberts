@@ -84,7 +84,7 @@ const Home = () => {
       <section className="featured-video">
         <h2>Featured Hiking Vlog</h2>
         <iframe width="500" height="300" 
-          src="https://www.youtube.com/embed/3Vvt5zx1STE?si=JDdBU_hscL90U6hs" 
+          src="https://www.youtube.com/embed/Nq9J11NV5GM?si=TliVfeH7VP7mjR-8" 
           title="YouTube video player" 
           frameborder="0" 
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
