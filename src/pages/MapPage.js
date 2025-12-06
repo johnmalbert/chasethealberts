@@ -12,7 +12,15 @@ L.Icon.Default.mergeOptions({
     shadowUrl: require('leaflet/dist/images/marker-shadow.png'),
 });
 
-const MapPage = ({ coordinates }) => {
+const MapPage = ({ coordinates, onMarkerClick, filteredHikes }) => {
+    const handlePopupClick = (hikeId) => {
+        // Find the hike object from filtered hikes by id
+        const hike = filteredHikes.find(h => h.id === hikeId);
+        if (hike && onMarkerClick) {
+            onMarkerClick(hike);
+        }
+    };
+
     return (
         <MapContainer 
             center={[47.6062, -122.3321]} 
@@ -26,7 +34,14 @@ const MapPage = ({ coordinates }) => {
             />
             {coordinates.map((coord) => (
                 <Marker key={coord.id} position={[coord.lat, coord.lng]}>
-                    <Popup>{coord.name}</Popup>
+                    <Popup>
+                        <div 
+                            style={{ cursor: 'pointer', color: '#007bff', textDecoration: 'underline' }}
+                            onClick={() => handlePopupClick(coord.id)}
+                        >
+                            {coord.name}
+                        </div>
+                    </Popup>
                 </Marker>
             ))}
         </MapContainer>
