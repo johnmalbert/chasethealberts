@@ -22,6 +22,7 @@
 .passport-item {
     margin: 10px;
     text-align: center;
+    position: relative;
 }
 
 .passport-item img {
@@ -29,6 +30,55 @@
     height: 100px;
     object-fit: cover;
     border-radius: 10px;
+}
+
+.remove-button {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: #ff4444;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.remove-button:hover {
+    background-color: #cc0000;
+    transform: scale(1.1);
+}
+
+/* Start Over Button Styling */
+.start-over-button-container {
+    margin: 15px 0;
+}
+
+.start-over-button {
+    padding: 10px 20px;
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.start-over-button:hover {
+    background-color: #cc0000;
+    transform: scale(1.05);
+}
+
+.start-over-button:active {
+    transform: scale(0.98);
 }
 
 .parks-list {
@@ -144,4 +194,40 @@
 .search-bar input::placeholder {
     color: #a9a9a9;
     /* Lighter gray for the placeholder */
+}
+
+/* Progress Bar Styling */
+.progress-section {
+    margin: 15px 0;
+    padding: 15px 0;
+}
+
+.progress-text {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.progress-bar-container {
+    width: 100%;
+    max-width: 500px;
+    height: 25px;
+    background-color: #e0e0e0;
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 0 auto;
+    border: 2px solid #2e8b57;
+}
+
+.progress-bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #2e8b57, #4caf50);
+    transition: width 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 0.85rem;
 }

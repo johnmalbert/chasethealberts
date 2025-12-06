@@ -77,7 +77,9 @@ const ParksPassport = () => {
       setPassport([...passport, park]);
       setTotalParks(totalParks + 1);
       setVisitedParks([...visitedParks, park.id]);
-      appInsights.trackEvent({ name: 'addToPassport' }, { parkName: park.name });
+      if (appInsights) {
+        appInsights.trackEvent({ name: 'addToPassport' }, { parkName: park.name });
+      }
       console.log('Added to passport:', park.name);
     }
   };
@@ -87,6 +89,20 @@ const ParksPassport = () => {
       setVisitedParks([...visitedParks, park.id]);
       setPassport([...passport, park]);
       setTotalParks(totalParks + 1);
+    }
+  };
+
+  const removeFromPassport = (parkId) => {
+    setPassport(passport.filter((park) => park.id !== parkId));
+    setVisitedParks(visitedParks.filter((id) => id !== parkId));
+    setTotalParks(totalParks - 1);
+  };
+
+  const clearAllParks = () => {
+    if (window.confirm('Are you sure you want to clear all parks from your passport? This cannot be undone.')) {
+      setPassport([]);
+      setVisitedParks([]);
+      setTotalParks(0);
     }
   };
 
@@ -122,14 +138,45 @@ const ParksPassport = () => {
         <h2 className="clickable-header" onClick={togglePassportList}>
           Your Passport ({totalParks} parks)
         </h2>
+        
+        {/* Progress Bar */}
+        <div className="progress-section">
+          <div className="progress-text">
+            {totalParks} of {parks.length} parks visited ({Math.round((totalParks / parks.length) * 100)}%)
+          </div>
+          <div className="progress-bar-container">
+            <div 
+              className="progress-bar-fill" 
+              style={{ width: `${(totalParks / parks.length) * 100}%` }}
+            ></div>
+          </div>
+        </div>
+
         {!showPassport && (<h5 className="clickable-header" onClick={togglePassportList}>Click to view your passport</h5>)}
         {showPassport && (<h5 className="clickable-header" onClick={togglePassportList}>Click to hide</h5>)}
+        {showPassport && totalParks > 0 && (
+          <div className="start-over-button-container">
+            <button 
+              className="start-over-button"
+              onClick={clearAllParks}
+            >
+              Start over
+            </button>
+          </div>
+        )}
         {showPassport && (
           <div className="passport-list">
             {passport.map((park) => (
               <div key={park.id} className="passport-item">
                 <img src={park.image} alt={park.name} />
                 <p className="park-name">{park.name}</p>
+                <button 
+                  className="remove-button"
+                  onClick={() => removeFromPassport(park.id)}
+                  title="Remove from passport"
+                >
+                  ✕
+                </button>
               </div>
             ))}
           </div>
