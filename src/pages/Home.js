@@ -46,6 +46,14 @@ const Home = () => {
   // Trigger scroll animations
   useScrollAnimation();
 
+  // Load TikTok embed script
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://www.tiktok.com/embed.js';
+    script.async = true;
+    document.body.appendChild(script);
+  }, []);
+
   return (
     <div className="home-container">
       {/* Hero Section */}
@@ -77,7 +85,7 @@ const Home = () => {
             <img src="/images/japan/photo8.jpg" alt="John" className="story-image" />
             <h3>John</h3>
             <p className="story-subtitle">The Driver & Gear Hauler</p>
-            <p>John's primary job is driving us to the trailhead and carrying the 3 lb telephoto lens and other heavy equipment up mountains. He also occasionally appears in photos when someone needs to point at something scenic.</p>
+            <p>John's primary job is driving us to the trailhead and carrying the 3 lb telephoto lens and other heavy equipment up mountains. He also occasionally appears in photos when someone needs to point at something scenic. John love's a good side mission from camp.</p>
           </div>
 
           <div className="story-card">
@@ -86,20 +94,21 @@ const Home = () => {
             <p className="story-subtitle">Our Adventure Companion</p>
             <p>Always ready for the next trail, Sahale has been our hiking partner, crazy banshee, foot warmer in the sleeping bag, and photography subject since we first came home with her. A true mountain dog at heart.</p>
           </div>
-          
+
           <div className="story-card">
-            <img src="/images/vesper.jpg" alt="Vesper" className="story-image" />
-            <h3>Vesper</h3>
-            <p className="story-subtitle">The Newest Explorer</p>
-            <p>Our first adventure pup. Vesper came to life when we were out on trail; it was her favorite place to be with us.</p>
+            <iframe src="https://www.instagram.com/chasethealberts/embed" width="100%" height="300" title="Instagram feed" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
           </div>
 
           <div className="story-card">
-            <div className="stat-box">
-              <div className="stat-number">20</div>
-              <div className="stat-label">National Parks Visited</div>
-            </div>
-            <p>We've explored from the Pacific Northwest, mountains in Japan, highlands in Iceland, 20 national parks across the US, Dolomites and Alps in Europe, and so many other places in between. Each adventure tells a unique story.</p>
+            <iframe width="100%" height="300" src="https://www.youtube.com/embed/utD60GayXJ8?si=NbsI61ESTjV0V4vc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+
+          <div className="story-card">
+            <blockquote className="tiktok-embed" cite="https://www.tiktok.com/@chasethealberts" data-unique-id="chasethealberts" data-embed-type="creator">
+              <section>
+                <a target="_blank" href="https://www.tiktok.com/@chasethealberts?refer=creator_embed" rel="noopener noreferrer">@chasethealberts</a>
+              </section>
+            </blockquote>
           </div>
         </div>
 
