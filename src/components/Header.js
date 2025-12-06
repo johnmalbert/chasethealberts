@@ -10,6 +10,10 @@ const Header = () => {
     setMenuOpen(!menuOpen);
   };
 
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
   return (
     <header className="header">
       <div className="logo">
@@ -26,11 +30,11 @@ const Header = () => {
       
       <nav className={`nav ${menuOpen ? 'open' : ''}`}>
         <ul>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/take-a-hike">Take a Hike</Link></li>
-          <li><Link to="/our-dogs">Our Dogs</Link></li>
-          <li><Link to="/landscapes">Landscapes</Link></li>
-          <li><Link to="/parks-passport">Parks Passport</Link></li>
+          <li><Link to="/" onClick={closeMenu}>Home</Link></li>
+          <li><Link to="/take-a-hike" onClick={closeMenu}>Take a Hike</Link></li>
+          <li><Link to="/our-dogs" onClick={closeMenu}>Our Dogs</Link></li>
+          <li><Link to="/landscapes" onClick={closeMenu}>Landscapes</Link></li>
+          <li><Link to="/parks-passport" onClick={closeMenu}>Parks Passport</Link></li>
         </ul>
       </nav>
 

@@ -17,6 +17,8 @@ const TakeAHike = () => {
 
   // Reference for the hike details section
   const hikeDetailsRef = useRef(null);
+  // Reference for the top of the page
+  const pageTopRef = useRef(null);
 
   // Filter hikes based on selected filters
   const filteredHikes = filteredHikesbySearch.filter((hike) => {
@@ -45,7 +47,7 @@ const TakeAHike = () => {
   }, [selectedHike]); // This will trigger the scroll after selectedHike changes
 
   return (
-    <div className="take-a-hike-page">
+    <div className="take-a-hike-page" ref={pageTopRef}>
       <h1>Take a Hike</h1>
       <div className="centered-intro">
         <b>
@@ -199,7 +201,9 @@ const TakeAHike = () => {
                 onClick={(e) => {
                   e.preventDefault();
                   setSelectedHike(null);
-                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                  if (pageTopRef.current) {
+                    pageTopRef.current.scrollIntoView({ behavior: "smooth" });
+                  }
                 }}
               >
                 ← Choose another hike
