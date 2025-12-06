@@ -19,7 +19,7 @@ const Footer = () => {
 
       {/* Copyright or additional info */}
       <div className="footer-text">
-        <p>&copy; 2024 The Alberts | All Rights Reserved</p>
+        <p>&copy; 2026 The Alberts | All Rights Reserved</p>
       </div>
     </footer>
   );

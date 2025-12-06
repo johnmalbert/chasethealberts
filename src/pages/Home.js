@@ -48,41 +48,100 @@ const Home = () => {
 
   return (
     <div className="home-container">
+      {/* Hero Section */}
+      <section className="hero-section">
+        <div className="hero-content">
+          <h1 className="hero-title">Chase the Alberts</h1>
+          <p className="hero-subtitle">Adventure, Photography & Outdoor Stories</p>
+          <div className="hero-buttons">
+            <Link to="/take-a-hike" className="hero-button primary">Explore Hikes</Link>
+            <Link to="/parks-passport" className="hero-button secondary">Parks Passport</Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Our Story Section */}
+      <section className="our-story">
+        <h2>Our Story</h2>
+        <p className="story-intro">We are @chasethealberts - John, Erin and Sahale</p>
+        
+        <div className="story-cards">
+          <div className="story-card">
+            <img src="/images/hikes/ruth1.jpg" alt="Erin" className="story-image" />
+            <h3>Erin</h3>
+            <p className="story-subtitle">The Planner & Photographer</p>
+            <p>Behind every great adventure is meticulous planning. Erin maps the routes, books the accommodations, and captures the moments that matter most.</p>
+          </div>
+
+          <div className="story-card">
+            <img src="/images/japan/photo8.jpg" alt="John" className="story-image" />
+            <h3>John</h3>
+            <p className="story-subtitle">The Driver & Gear Hauler</p>
+            <p>John's primary job is driving us to the trailhead and carrying the 3 lb telephoto lens and other heavy equipment up mountains. He also occasionally appears in photos when someone needs to point at something scenic.</p>
+          </div>
+
+          <div className="story-card">
+            <img src="/images/sahale.jpg" alt="Sahale" className="story-image" />
+            <h3>Sahale</h3>
+            <p className="story-subtitle">Our Adventure Companion</p>
+            <p>Always ready for the next trail, Sahale has been our hiking partner, crazy banshee, foot warmer in the sleeping bag, and photography subject since we first came home with her. A true mountain dog at heart.</p>
+          </div>
+          
+          <div className="story-card">
+            <img src="/images/vesper.jpg" alt="Vesper" className="story-image" />
+            <h3>Vesper</h3>
+            <p className="story-subtitle">The Newest Explorer</p>
+            <p>Our first adventure pup. Vesper came to life when we were out on trail; it was her favorite place to be with us.</p>
+          </div>
+
+          <div className="story-card">
+            <div className="stat-box">
+              <div className="stat-number">20</div>
+              <div className="stat-label">National Parks Visited</div>
+            </div>
+            <p>We've explored from the Pacific Northwest, mountains in Japan, highlands in Iceland, 20 national parks across the US, Dolomites and Alps in Europe, and so many other places in between. Each adventure tells a unique story.</p>
+          </div>
+        </div>
+
+        <p className="story-description">
+          Every chance we get, we're creating memories together and capturing images along the way—even if that means hauling a 3 lb telephoto lens up a Washington volcano. 
+          We live in Renton, Washington and work desk jobs Monday to Friday, but keep our bags packed for weekend adventures.
+        </p>
+      </section>
+
       <div className="lessons-section">
         <div className="dog-images-container">
           <img src="/images/sahale.jpg" alt="Sahale" className="dog-image" />
           <p>
             <div className="centered-intro">
-              <b><i>We are @chasethealberts - John, Erin and Sahale.</i></b>
-            </div>
-    
-            Every chance that we get, we are creating memories together and capturing images along the way, 
-            even if that means hauling a 3 lb telephoto lens up a Washington volcano. 
-            We live in Renton, Washington and work a desk job Monday to Friday, but keep our bags packed for the weekends.
-            <br />
-            <br />
-            Here you can find some of our favorite shots, a little more about us, find your next hike, and a few other things. 
-            You can always reach out to us at chasethealberts@gmail.com, or any of the links at the bottom of the page. 
-            <br />
-            <div className="button-container">
-                <Link to="/take-a-hike" className="styled-button">Take A Hike</Link>
-                <Link to="/parks-passport" className="styled-button">Parks Passport</Link>
-                <Link to="/landscapes" className="styled-button">Landscapes</Link>
+              <b><i>Here you can find some of our favorite shots, a little more about us, find your next hike, and a few other things.</i></b>
+              <br></br>
+              You can always reach out to us at chasethealberts@gmail.com, or any of the links at the bottom of the page. 
+              <br />
+              <div className="button-container">
+                  <Link to="/our-dogs" className="styled-button">Our Dogs</Link>
+                  <Link to="/landscapes" className="styled-button">Landscapes</Link>
+                  <Link to="/japan" className="styled-button">Japan</Link>
+              </div>
             </div>
           </p>
           <img src="/images/vesper.jpg" alt="Vesper" className="dog-image" />
         </div>
       </div>
+      
       {/* Featured Photos Section */}
       <section className="featured-photos">
-        <h2>Featured Photos</h2>
-        <h5>Tap to see the subtitle with details/location!</h5>
+        <div className="featured-photos-header">
+          <h2>Featured Photos</h2>
+          <p className="featured-intro">A collection of our favorite moments across the Pacific Northwest, Japan, and beyond. Click on any photo to see the location and details.</p>
+        </div>
         <PhotoSection photos={featuredPhotos} />
       </section>
 
       {/* Featured Video Section */}
       <section className="featured-video">
         <h2>Featured Hiking Vlog</h2>
+        <p className="video-intro">Watch our latest adventure and subscribe for more mountain stories</p>
         <iframe width="500" height="300" 
           src="https://www.youtube.com/embed/Nq9J11NV5GM?si=TliVfeH7VP7mjR-8" 
           title="YouTube video player" 
@@ -95,15 +154,17 @@ const Home = () => {
 
     {/* About Us Section */}
     <section className="about-us">
-      <h2>About Us</h2>
+      <h2>Why We Do This</h2>
       <div className="about-us-content">
         <p>
-          We have found that sometimes the only way to recharge is to step away and unplug in the mountains, 
-          and these images attempt to capture that feeling. If you'd like to request full-resolution images, 
-          send an email to chasethealberts@gmail.com!
+          We have found that sometimes the only way to recharge is to step away and unplug in the mountains. 
+          These images attempt to capture that feeling—the peace of a misty morning, the thrill of a summit, 
+          the connection we share with these incredible places and each other. 
+          <br/><br/>
+          If you'd like to request full-resolution images or collaborate, send an email to chasethealberts@gmail.com!
         </p>
         <img 
-          src="/images/profile.jpg" // Add your image source here
+          src="/images/profile.jpg"
           alt="Profile" 
           className="about-us-logo about-us-right-image" 
         />
