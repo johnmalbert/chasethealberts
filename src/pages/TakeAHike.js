@@ -101,12 +101,16 @@ const TakeAHike = () => {
 
       <div className="map-section">
         <h2>Hike Locations</h2>
-        <MapPage coordinates={filteredHikes.map((hike) => ({
-          id: hike.id,
-          lat: hike.coordinates.split(",")[0],
-          lng: hike.coordinates.split(",")[1],
-          name: hike.name,
-        }))} />
+        <MapPage 
+          coordinates={filteredHikes.map((hike) => ({
+            id: hike.id,
+            lat: hike.coordinates.split(",")[0],
+            lng: hike.coordinates.split(",")[1],
+            name: hike.name,
+          }))} 
+          onMarkerClick={handleHikeClick}
+          filteredHikes={filteredHikes}
+        />
       </div>
 
       {/* Photo Grid */}
@@ -189,6 +193,18 @@ const TakeAHike = () => {
                 title="AllTrails: Trail Guides and Maps for Hiking, Camping, and Running"
               ></iframe>
             )}
+            <div className="choose-another-hike">
+              <a 
+                href="#top" 
+                onClick={(e) => {
+                  e.preventDefault();
+                  setSelectedHike(null);
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }}
+              >
+                ← Choose another hike
+              </a>
+            </div>
           </div>
         </div>
       )}
