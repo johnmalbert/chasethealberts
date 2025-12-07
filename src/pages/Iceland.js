@@ -4,37 +4,40 @@ import VideoSection from '../components/VideoSection';
 import useScrollAnimation from '../hooks/useScrollAnimation';
 import '../Home.css'; // Reuse the same styles as the home page
 
-// Define the photos for the Japan page with their subtitles
-const japanPhotos = [
-  { src: '/images/japan/photo1.jpg', subtitle: 'Sights from Kumano Kodo Pilgramage' },
-  { src: '/images/japan/photo2.jpg', subtitle: 'Shibuya Square' },
-  { src: '/images/japan/photo3.jpg', subtitle: 'Overlooking Miyajima' },
-  { src: '/images/japan/photo4.jpg', subtitle: 'Bamboo Forest in Kyoto' },
-  { src: '/images/japan/photo5.jpg', subtitle: 'Nara Temple' },
-  { src: '/images/japan/photo6.jpg', subtitle: 'Our mountain hut, Yarigatake' },
-  { src: '/images/japan/photo7.jpg', subtitle: 'View from Yarigatake' },
-  { src: '/images/japan/photo8.jpg', subtitle: 'Yarigatake Summit' },
-  { src: '/images/japan/photo9.jpg', subtitle: 'Bear bell along the Kamikochi trails' },
-  { src: '/images/japan/photo10.jpg', subtitle: 'Filling up on the way to Yarigatake' },
-  { src: '/images/japan/photo11.jpg', subtitle: 'No caption needed' },
-  { src: '/images/japan/photo12.jpg', subtitle: 'Kapabashi Bridge' },
-  { src: '/images/japan/photo13.jpg', subtitle: 'Looking up into the Northern Japanese Alps' },
-  { src: '/images/japan/photo14.jpg', subtitle: 'Views along the Azusa River' },
-  { src: '/images/japan/photo15.jpg', subtitle: 'Floating Torii Gate' }
+// Define the photos for the Iceland page with their subtitles
+const icelandPhotos = [
+  { src: '/images/iceland/iceland1.jpg', subtitle: 'Iceland Adventure' },
+  { src: '/images/iceland/iceland2.jpg', subtitle: 'Iceland Landscapes' },
+  { src: '/images/iceland/iceland3.jpg', subtitle: 'Iceland Journey' },
+  { src: '/images/iceland/iceland4.jpg', subtitle: 'Iceland Views' },
+  { src: '/images/iceland/iceland5.jpg', subtitle: 'Iceland Exploration' },
+  { src: '/images/iceland/iceland6.jpg', subtitle: 'Iceland Scenery' },
+  { src: '/images/iceland/iceland7.jpg', subtitle: 'Iceland Highlands' },
+  { src: '/images/iceland/iceland8.jpg', subtitle: 'Iceland Beauty' },
+  { src: '/images/iceland/iceland9.jpg', subtitle: 'Iceland Wonders' },
+  { src: '/images/iceland/iceland10.jpg', subtitle: 'Iceland Nature' },
+  { src: '/images/iceland/iceland11.jpg', subtitle: 'Iceland Trail' },
+  { src: '/images/iceland/iceland12.jpg', subtitle: 'Iceland Mountains' },
+  { src: '/images/iceland/iceland13.jpg', subtitle: 'Iceland Wilderness' },
+  { src: '/images/iceland/iceland14.jpg', subtitle: 'Iceland Discovery' },
+  { src: '/images/iceland/iceland15.jpg', subtitle: 'Iceland Horizon' },
+  { src: '/images/iceland/iceland16.jpg', subtitle: 'Iceland Vista' },
+  { src: '/images/iceland/iceland17.jpg', subtitle: 'Iceland Peaks' },
+  { src: '/images/iceland/iceland18.jpg', subtitle: 'Iceland Journey' }
 ];
 
-const Japan = () => {
+const Iceland = () => {
   // State to store the photos with their subtitles
   const [featuredPhotos, setFeaturedPhotos] = useState([]);
 
   // Shuffle the photos every time the component mounts
   useEffect(() => {
-    const shuffledPhotos = [...japanPhotos];
+    const shuffledPhotos = [...icelandPhotos];
     shuffledPhotos.sort(() => Math.random() - 0.5); // Shuffle the photos
     setFeaturedPhotos(shuffledPhotos);
   }, []);
 
-  const featuredVideoUrl = "https://www.youtube.com/embed/G62wWhGiJJs?si=ZJV7s6hKbJtHSvtL"; // Replace with Japan-specific video if desired
+  const featuredVideoUrl = "https://www.youtube.com/embed/Nq9J11NV5GM?si=TliVfeH7VP7mjR-8"; // Replace with Iceland-specific video if desired
 
   // Trigger scroll animations
   useScrollAnimation();
@@ -43,13 +46,13 @@ const Japan = () => {
     <div className="home-container">
       {/* Featured Photos Section */}
       <section className="featured-photos">
-        <h2>Photos from Japan</h2>
+        <h2>Photos from Iceland</h2>
         <PhotoSection photos={featuredPhotos} />
       </section>
 
       {/* Featured Video Section */}
       <section className="featured-video">
-        <h2>Explore Japan</h2>
+        <h2>Explore Iceland</h2>
         <VideoSection videoUrl={featuredVideoUrl} />
       </section>
 
@@ -68,7 +71,7 @@ const Japan = () => {
         and these images attempt to capture that feeling.
         </p>
         <img 
-        src="/images/profile.jpg" // Add your image source here
+        src="/images/profile.jpg"
         alt="Profile" 
         className="about-us-logo about-us-right-image" 
         />
@@ -98,4 +101,4 @@ const Japan = () => {
   );
 };
 
-export default Japan;
+export default Iceland;

@@ -508,6 +508,36 @@ export const hikes = [
     allTrails: "https://www.alltrails.com/widget/trail/us/washington/surprise-creek-trail-to-surprise-and-glacier-lakes?u=i&sh=ud7hlu",
     coordinates: "47.7086,-121.15466"
   },
+  {
+    id: 35,
+    name: "Goat Lake, Ptarmigan Ridge",
+    wildernessArea: "Mount Baker Area",
+    length: 10.5, // miles
+    dogsAllowed: true,
+    highlights: "Stunning views of Mount Baker with minimal elevation gain. Rocky trail with lupine and sedges. Access to beautiful green Goat Lake.",
+    permit: "Northwest Forest Pass",
+    distanceFromSeattle: 158, // miles
+    coverPhotos: ["/images/hikes/goat2.jpg"],
+    photos: ["/images/hikes/goat1.jpg", "/images/hikes/goat2.jpg", "/images/hikes/goat3.jpg"],
+    youtubeVideo: "",
+    allTrails: "https://www.alltrails.com/widget/trail/us/washington/ptarmigan-ridge?u=i&sh=ud7hlu",
+    coordinates: "48.8463, -121.6927"
+  },
+  {
+    id: 36,
+    name: "Cyclone Lake, Snowking Mountain",
+    wildernessArea: "North Cascades",
+    length: 16, // miles
+    dogsAllowed: true,
+    highlights: "Strenuous mountaineering trip or class 3 alpine scramble with stunning panoramic mountain views, deep blue alpine lakes and rewarding isolation.",
+    permit: "Wilderness permit. Self-issue at trailhead (no fee)",
+    distanceFromSeattle: 100, // miles
+    coverPhotos: ["/images/hikes/cyclone1.jpg"],
+    photos: ["/images/hikes/cyclone1.jpg", "/images/hikes/cyclone2.jpg", "/images/hikes/cyclone3.jpg"],
+    youtubeVideo: "https://www.youtube.com/embed/Sp3apQcS7TQ?si=3TC0wEgQPExU2-0R",
+    allTrails: "https://www.alltrails.com/widget/trail/us/washington/snowking-mountain?u=i&sh=ud7hlu",
+    coordinates: "48.4731, -121.2328"
+  },
   // {
   //   id: ,
   //   name: "",

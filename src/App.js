@@ -8,6 +8,8 @@ import Landscapes from './pages/Landscapes';
 import TakeAHike from './pages/TakeAHike';
 import OurDogs from './pages/OurDogs';
 import ParksPassport from './pages/ParksPassport';
+import Japan from './pages/Japan';
+import Iceland from './pages/Iceland';
 
 function App() {
   return (
@@ -19,7 +21,9 @@ function App() {
           <Route path="/landscapes" element={<Landscapes />} />
           <Route path="/our-dogs" element={<OurDogs />} />
           <Route path="/take-a-hike" element={<TakeAHike />} />
-          <Route path="/parks-passport" element={<ParksPassport />} /> {/* Add the new route */}
+          <Route path="/parks-passport" element={<ParksPassport />} />
+          <Route path="/japan" element={<Japan />} />
+          <Route path="/iceland" element={<Iceland />} />
           {/* Add other routes */}
         </Routes>
         <Footer />

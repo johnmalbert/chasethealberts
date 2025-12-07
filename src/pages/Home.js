@@ -29,6 +29,8 @@ const originalPhotos = [
   { src: '/images/photo21.jpg', subtitle: 'Sahale as a puppy' },
   { src: '/images/photo23.jpg', subtitle: 'Larches near Grasshopper Pass' },
   { src: '/images/photo24.jpg', subtitle: 'Camping at Sahale Arm' },
+  { src: '/images/photo26.jpg', subtitle: 'Photo 26' },
+  { src: '/images/photo27.jpg', subtitle: 'Photo 27' },
 ];
 
 const Home = () => {
@@ -78,14 +80,14 @@ const Home = () => {
             <img src="/images/hikes/ruth1.jpg" alt="Erin" className="story-image" />
             <h3>Erin</h3>
             <p className="story-subtitle">The Planner & Photographer</p>
-            <p>Behind every great adventure is meticulous planning. Erin maps the routes, books the accommodations, and captures the moments that matter most.</p>
+            <p>Behind every great adventure is meticulous planning. Erin maps the routes, books the accommodations, and captures each moment with a talented eye. </p>
           </div>
 
           <div className="story-card">
             <img src="/images/japan/photo8.jpg" alt="John" className="story-image" />
             <h3>John</h3>
             <p className="story-subtitle">The Driver & Gear Hauler</p>
-            <p>John's primary job is driving us to the trailhead and carrying the 3 lb telephoto lens and other heavy equipment up mountains. He also occasionally appears in photos when someone needs to point at something scenic. John love's a good side mission from camp.</p>
+            <p>John's primary job is driving us to the trailhead and carrying the 3 lb telephoto lens and other heavy equipment up mountains. He also occasionally appears in photos when someone needs to point at something scenic. John also loves a good side mission from camp.</p>
           </div>
 
           <div className="story-card">
@@ -128,9 +130,10 @@ const Home = () => {
               You can always reach out to us at chasethealberts@gmail.com, or any of the links at the bottom of the page. 
               <br />
               <div className="button-container">
-                  <Link to="/our-dogs" className="styled-button">Our Dogs</Link>
-                  <Link to="/landscapes" className="styled-button">Landscapes</Link>
-                  <Link to="/japan" className="styled-button">Japan</Link>
+                  <Link to="/our-dogs" className="hero-button secondary">Our Dogs</Link>
+                  <Link to="/landscapes" className="hero-button secondary">Landscapes</Link>
+                  <Link to="/japan" className="hero-button secondary">Japan</Link>
+                  <Link to="/iceland" className="hero-button secondary">Iceland</Link>
               </div>
             </div>
           </p>
@@ -145,20 +148,6 @@ const Home = () => {
           <p className="featured-intro">A collection of our favorite moments across the Pacific Northwest, Japan, and beyond. Click on any photo to see the location and details.</p>
         </div>
         <PhotoSection photos={featuredPhotos} />
-      </section>
-
-      {/* Featured Video Section */}
-      <section className="featured-video">
-        <h2>Featured Hiking Vlog</h2>
-        <p className="video-intro">Watch our latest adventure and subscribe for more mountain stories</p>
-        <iframe width="500" height="300" 
-          src="https://www.youtube.com/embed/Nq9J11NV5GM?si=TliVfeH7VP7mjR-8" 
-          title="YouTube video player" 
-          frameborder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-          referrerpolicy="strict-origin-when-cross-origin" 
-          allowfullscreen>
-        </iframe>
       </section>
 
     {/* About Us Section */}
