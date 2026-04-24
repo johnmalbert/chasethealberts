@@ -35,6 +35,9 @@ const Blog = () => {
             I majored in math, not English. Go easy, but just know I won't use AI to write these.
           </p>
         </div>
+        <div className="blog-hero-card">
+          <img src="/images/photo3.jpg" alt="Trail and mountains" />
+        </div>
       </section>
 
       <section className="blog-posts-section">
