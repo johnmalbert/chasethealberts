@@ -134,6 +134,7 @@ const Home = () => {
                   <Link to="/landscapes" className="hero-button secondary">Landscapes</Link>
                   <Link to="/japan" className="hero-button secondary">Japan</Link>
                   <Link to="/iceland" className="hero-button secondary">Iceland</Link>
+                  <Link to="/blog" className="hero-button secondary">Latest Blog</Link>
               </div>
             </div>
           </p>

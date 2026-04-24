@@ -10,6 +10,7 @@ import OurDogs from './pages/OurDogs';
 import ParksPassport from './pages/ParksPassport';
 import Japan from './pages/Japan';
 import Iceland from './pages/Iceland';
+import Blog from './pages/Blog';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/parks-passport" element={<ParksPassport />} />
           <Route path="/japan" element={<Japan />} />
           <Route path="/iceland" element={<Iceland />} />
+          <Route path="/blog" element={<Blog />} />
           {/* Add other routes */}
         </Routes>
         <Footer />
