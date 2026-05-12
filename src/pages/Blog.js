@@ -3,6 +3,29 @@ import '../Blog.css';
 
 const blogPosts = [
   {
+    title: "That's a new one!",
+    date: 'May 2026',
+    category: 'Trail Notes',
+    summary: 'Buckhorn Mountain, Marmot Pass, Olympics',
+    photos: [
+      { src: '/images/blog/bh2.jpg', alt: 'Buckhorn Mountain trail views' },
+      { src: '/images/blog/bh3.jpg', alt: 'Buckhorn Mountain camp' },
+      { src: '/images/blog/bh4.jpg', alt: 'Buckhorn Mountain ridgeline' },
+    ],
+    paragraphs: [
+      'We spend most weekends in the summer in a tent away from everything. So much so, that it feels a little routine. Thursday afternoon, the backpacks and a pile of stuff hit the garage floor. One by one we check off items from the list, like the Jetboil, fuel, sleeping pads, a towel, spare quilt for the dog, etc. Even our departure time is almost always the same, just before 6 am. If I find the motivation, my next feature for this website will be a tool to mark off everything we need for our weekend gear checklist.',
+      "You might think we've seen it all, done it all, hiked them all. Not even close! On this last hike, we saw or experienced a few things that I've never had happen before.",
+      'A shoe-fetching dog.',
+      "After tramping through snow to reach our campsite for the night on the ridge above Marmot Pass, I sat down on a ledge and took off my shoes to let the sun dry out the snow that had melted inside them. Maybe I was tired, but when I set my shoe down a few seconds later I was watching it tumble down the slope below me, until it stopped (fortunately) by a tree about 100' down. Tired, and down a shoe, I didn't want to scramble down to grab it. If you've been to our house, you know Sahale loves taking your shoe and parading it around. This was her time to shine, I sent her after my fallen shoe and she brought it all the way back!",
+      'A bad dog',
+      "The bugs were not too bad, and I'm thankful for that. During our afternoon nap, another hiker approached and Sahale reacted by jumping through the tent door. Not the open tent door, the closed mesh door, leaving a 2 foot hole behind her. Time to figure out how to patch a tent or decide if the REI Memorial Day sale is calling. We are working on the reactivity. She usually goes crazy when we are posted up in or around our tent and someone approaches. All other times on trail she doesn't care at all when someone else is around.",
+      'A house cat',
+      '"Is that a dog?" I asked as another backpacker passed me on trail. "No, it\'s a cat!" she said, referring to the furry friend resting on top of her backpack. Never seen that one before.',
+      'Friendly neighbors',
+      'Sometimes, being back at elevation leads to migraines for Erin. After praying about it, I got up the guts to ask the neighbors camped just up the ridge for us for some Ibuprofen, which they were more than happy to share. After the hike, we even got some Instagram messages from another couple who camped even higher up the ridge, saying they say us on their way up! Even in the solitude, we still enjoy having each other out there.'
+    ]
+  },
+  {
     title: "Let's Count the Blow Downs",
     date: 'April 2026',
     category: 'Trail Notes',
